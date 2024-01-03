@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /markdown-examples
+      link: /algorithm/
     - theme: alt
       text: VitePress
       link: https://vitepress.dev/

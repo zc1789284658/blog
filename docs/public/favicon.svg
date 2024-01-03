@@ -1,0 +1,120 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="100%" height="100%" viewBox="0 0 140 140" preserveAspectRatio="xMidYMid meet"
+    color-interpolation-filters="sRGB" style="margin: auto;">
+    <rect x="0" y="0" width="100%" height="100%" fill="#ffffff" fill-opacity="1"
+    >
+    </rect>
+    <g fill="#333"
+        transform="scale(1.4)">
+        <g fill="#333">
+            <rect fill="#333" fill-opacity="0" stroke-width="2" x="0" y="0" width="100" height="100">
+            </rect>
+            <svg viewBox="0 0 60 60" x="0" y="0" width="100" height="100"
+                style="overflow: visible;">
+                <g hollow-target="iconBnOutline">
+                    <g mask="url(#8b21d546-043e-4d9e-b0f9-f8c1201c8f99)">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                            style="shape-rendering: geometricprecision; text-rendering: geometricprecision; overflow: visible;"
+                            viewBox="3.7276 3.72758 92.5448 92.5448" x="0" y="0" fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            width="60" height="60" filtersec="colorsf1328782092"
+                            filter="url(#76ERr9_mGeO5ULApEk2_A)">
+                            <g transform="scale(1, 1) skewX(0)">
+                                <defs>
+                                    <filter >
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.19921875  0 0 0 0 0.19921875  0 0 0 0 0.19921875  0 0 0 1 0">
+                                        </feColorMatrix>
+                                    </filter>
+                                </defs>
+                                <g>
+                                    <path 
+                                        d="M50 3.72759l46.2724 46.2724 -46.2724 46.2724 -46.2724 -46.2724 46.2724 -46.2724zm0 8.35282l-37.9196 37.9196 37.9196 37.9196 37.9196 -37.9196 -37.9196 -37.9196z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </g>
+                    <g filter="url(#colors8350960952)">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 81.79200000000002 65.88000000000001"
+                            width="45" height="45" x="7.5" y="7.5">
+                            <path transform="translate(-3.3120000000000003 54.93600000000001)"
+                                d="M16.70 5.98L16.70-54.94L32.11-54.94L32.11 10.94L3.31 10.94L3.31 5.98L16.70 5.98ZM85.10 5.62L85.10 10.94L79.70 10.94L72.07 7.92L64.44 10.94L38.74 10.94L38.74-34.78L75.24-34.78Q77.11-34.78 78.41-33.44Q79.70-32.11 79.70-30.24L79.70-30.24L79.70 5.62L85.10 5.62ZM61.49-29.45L55.44-29.45L55.44 5.62L63.00 5.62L63.00-27.94Q63.00-29.45 61.49-29.45L61.49-29.45Z">
+                            </path>
+                        </svg>
+                    </g>
+                </g>
+                <mask>
+                    <g fill="white">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xml:space="preserve"
+                            style="shape-rendering: geometricprecision; text-rendering: geometricprecision; overflow: visible;"
+                            viewBox="3.7276 3.72758 92.5448 92.5448" x="0" y="0" fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            width="60" height="60" filtersec="colorsf1328782092">
+                            <g transform="scale(1, 1) skewX(0)">
+                                <defs></defs>
+                                <g>
+                                    <path
+                                        d="M50 3.72759l46.2724 46.2724 -46.2724 46.2724 -46.2724 -46.2724 46.2724 -46.2724zm0 8.35282l-37.9196 37.9196 37.9196 37.9196 37.9196 -37.9196 -37.9196 -37.9196z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </g>
+                    <g fill="black" filter="url(#5b6c8257-085f-47e8-b67f-a69ae86c5cdd)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 81.79200000000002 65.88000000000001" width="45" height="45"
+                            x="7.5" y="7.5"
+                        >
+                            <path transform="translate(-3.3120000000000003 54.93600000000001)"
+                                d="M16.70 5.98L16.70-54.94L32.11-54.94L32.11 10.94L3.31 10.94L3.31 5.98L16.70 5.98ZM85.10 5.62L85.10 10.94L79.70 10.94L72.07 7.92L64.44 10.94L38.74 10.94L38.74-34.78L75.24-34.78Q77.11-34.78 78.41-33.44Q79.70-32.11 79.70-30.24L79.70-30.24L79.70 5.62L85.10 5.62ZM61.49-29.45L55.44-29.45L55.44 5.62L63.00 5.62L63.00-27.94Q63.00-29.45 61.49-29.45L61.49-29.45Z">
+                            </path>
+                        </svg>
+                    </g>
+                    <defs>
+                        <filter>
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="1.26"></feGaussianBlur>
+                            <feComponentTransfer>
+                                <feFuncA type="discrete" tableValues="0 1 1 1 1 1 1 1 1 1 1 1 1 1 0"></feFuncA>
+                            </feComponentTransfer>
+                        </filter>
+                    </defs>
+                </mask>
+            </svg>
+            <defs>
+                <filter>
+                    <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.19921875  0 0 0 0 0.19921875  0 0 0 0 0.19921875  0 0 0 1 0"
+                    ></feColorMatrix>
+                </filter>
+                <filter>
+                    <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.99609375  0 0 0 0 0.99609375  0 0 0 0 0.99609375  0 0 0 1 0"
+                    ></feColorMatrix>
+                </filter>
+                <filter>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"
+                    ></feColorMatrix>
+                </filter>
+            </defs>
+        </g>
+        <g transform="translate(50,107.00000762939453)">
+            <g>
+                <g transform="scale(1)">
+                    <g>
+                        <path d="" transform="translate(0, 0)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs v-gra="od"></defs>
+</svg>

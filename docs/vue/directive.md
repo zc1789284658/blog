@@ -1,21 +1,9 @@
----
-title: vue中的自定义指令
-date: 2019-06-25
-tags: [js,vue]
-categories: [前端]
----
 
 # directive | 自定义指令
-目录：
-- [简介](#directive-intro)
-- [钩子函数](#directive-hooks)
-- [钩子函数参数](#directive-hooks-arguments)
-- [函数简写](#directive-function-simplified)
-- [对象字面量](#directive-object-literal)
 
 <!--more-->
 
-#### 简介 <span id='directive-intro'/>
+#### 简介 
 
 除了核心功能默认内置的指令 (v-model 和 v-show)，Vue 也允许注册自定义指令。注意，在 Vue2.0 中，代码复用和抽象的主要形式是组件。然而，有的情况下，你仍然需要对普通 DOM 元素进行底层操作，这时候就会用到自定义指令。举个聚焦输入框的例子，如下：
 
@@ -48,7 +36,7 @@ directives: {
 <input v-focus>
 ```
 
-#### 钩子函数 <span id='directive-hooks'/>
+#### 钩子函数 
 一个指令定义对象可以提供如下几个钩子函数 (均为可选)：
 
 `bind`：只调用一次，指令第一次绑定到元素时调用。在这里可以进行一次性的初始化设置。
@@ -65,7 +53,7 @@ directives: {
 
 接下来我们来看一下钩子函数的参数 (即 el、binding、vnode 和 oldVnode)。
 
-#### 钩子函数参数 <span id='directive-hooks-arguments' />
+#### 钩子函数参数 
 指令钩子函数会被传入以下参数：
 
 `el`：指令所绑定的元素，可以用来直接操作 DOM 。
@@ -91,6 +79,7 @@ directives: {
 除了 el 之外，其它参数都应该是只读的，切勿进行修改。如果需要在钩子之间共享数据，建议通过元素的 dataset 来进行。
 
 这是一个使用了这些属性的自定义钩子样例：
+
 ```html
 <div id="hook-arguments-example" v-demo:foo.a.b="message"></div>
 Vue.directive('demo', {
@@ -148,7 +137,7 @@ new Vue({
 })
 ```
 
-#### 函数简写 <span id='directive-function-simplified' />
+#### 函数简写 
 在很多时候，你可能想在 bind 和 update 时触发相同行为，而不关心其它的钩子。比如这样写:
 ```js
 Vue.directive('color-swatch', function (el, binding) {
@@ -156,7 +145,7 @@ Vue.directive('color-swatch', function (el, binding) {
 })
 
 ```
-### 对象字面量 <span id='directive-object-literal' />
+### 对象字面量 
 如果指令需要多个值，可以传入一个 JavaScript 对象字面量。记住，指令函数能够接受所有合法的 JavaScript 表达式。
 ```html
 <div v-demo="{ color: 'white', text: 'hello!' }"></div>

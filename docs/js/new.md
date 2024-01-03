@@ -1,23 +1,14 @@
----
-title: new关键字
-date: 2019-06-25
-tags: [js]
-categories: [前端,原生js]
----
 # new 
-- [只能通过new调用函数](#onlynew)
-    - [this instanceof xx](#instanceof)
-    - [new.target](#newtarget)
-- [用原生js实现一个new方法](#hwnew)
+
 
 
 <!--more-->
 
-<span id='onlynew'/>
+
 
 ## __必须使用 new 关键字生成的写法__
 
-<span id='instanceof'/>
+
 
 ### __this instanceof xx__
 
@@ -51,7 +42,7 @@ person1.__proto__ === Person.prototype  //true
 person instanceof Person  // true 
 ```
 
-<span id='newtarget'/>
+
 
 ### __class new.target 属性__
 
@@ -75,7 +66,7 @@ class Person {
 
 ---
 
-<span id='hwnew'/>
+
 
 ## __用原生js实现一个new方法__
 
@@ -86,6 +77,7 @@ function Person(name,age){
     this.age = age;
 }
 ```
+
 ### __new一个Person的实例p1做研究对比__
 ```js
 var p1 = new Person("Richard", 22);
@@ -93,6 +85,7 @@ var p1 = new Person("Richard", 22);
 p1.name;//Richard
 p1.age;//22
 ```
+
 ### __自定义一个New函数：__
 ```js
 //通过分析原生的new方法可以看出，在new一个函数的时候，
@@ -108,6 +101,7 @@ function New(f) {
     }
 }
 ```
+
 ### __通过自定义New方法创建一个实例对象p2:__
 ```js
 var p2 = New(Person)("Jack",25);

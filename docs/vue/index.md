@@ -1,14 +1,6 @@
----
-title: vue
-date: 2019-06-25
-tags: [js,vue]
-categories: [前端]
----
+
 # vue
 
-目录：
-- [混入](#mixin)
-- [自定义指令](#directive)
 
 <!--more-->
 
@@ -201,11 +193,11 @@ new Vue({
 ---
 
 ## 可复用性&组合 
-<span id='mixin'/>
+
 
 ### [mixin](./mixin.md) 
 
-<span id='directive'/>
+
 
 ### [自定义指令](./directive.md) 
 

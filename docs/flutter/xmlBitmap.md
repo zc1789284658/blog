@@ -1,38 +1,29 @@
 # XML Bitmap
-目录：
-- [定义](#def)
-- [文件位置](#loc)
-- [编译资源类型](#type)
-- [资源引用](#doc-ref)
-- [语法](#syntax)
-- [节点介绍](#node)
-- [属性](#attr)
-- [参考](#ref)
-- [其他](#other)
 
-## 定义 <span id='def' />
+
+## 定义 
 一个XML bitmap是一个在XML文件中定义的指向一个bitmap文件的资源。其效果是作为一个原始位图文件的别名，并且可以指定一些额外的属性。
 
 注意：你可以在<item>节点中使用<bitmap>作为它的子节点。比如，当你定义一个state list或者layer list的时候，可以包括一个android:drawable属性
 
 Note: You can use a <bitmap> element as a child of an<item> element. Forexample, when creating astate list orlayer list,you can exclude the android:drawableattribute from an<item> element and nest a<bitmap> inside it that defines the drawable item.
 
-## 文件位置：<span id='loc' />
+## 文件位置：
 
 res/drawable/filename.xml
 
 filename作为资源的ID
 
-## 编译资源类型 <span id='type' />
+## 编译资源类型 
 
 指向BitmapDrawable类型的指针
 
-## 资源引用 <span id='doc-ref' />
+## 资源引用 
 
 In Java: R.drawable.filename
 In XML: @[package:]drawable/filename
 
-## 语法:    <span id='syntax' />
+## 语法:    
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <bitmap
@@ -46,11 +37,11 @@ In XML: @[package:]drawable/filename
                       "center" | "fill" | "clip_vertical" | "clip_horizontal"]
     android:tileMode=["disabled" | "clamp" | "repeat" | "mirror"] />
 ```
-## 节点介绍：   <span id='node' />
+## 节点介绍：   
 
 `<bitmap>`  定义位图的来源和属性
 
-## 属性:    <span id='attr' />
+## 属性:    
 
 - xmlns:android 
 
@@ -115,13 +106,13 @@ In XML: @[package:]drawable/filename
         android:src="@drawable/icon"
         android:tileMode="repeat" />
     ```
-## 参考：   <span id='ref' />
+## 参考：   
 
 BitmapDrawable
 
 Creatingalias resources
 
-## 其他 <span id='other' />
+## 其他 
 ### BitmapDrawable的使用
 一个BitmapDrawable就是封装了一个位图。直接以文件的方式，就是封装了一个原始的位图。以Xml方式，可以对原始的位图进行一系列的处理，比如说抗锯齿，拉伸，对齐等等。
 

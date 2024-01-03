@@ -1,19 +1,9 @@
----
-title: Promise
-date: 2019-06-25
-tags: [js]
-categories: [前端,原生js]
----
+
 # Promise
 
-目录
-- [.then](#then)
-- [手写Promise](#hwpromise)
-- [执行顺序](#order)
 
 <!--more-->
 
-<span id='then' />
 
 ## .then
 ### 说明以下四种then的区别
@@ -166,7 +156,7 @@ func().then(
 
 ---
 
-<span id='hwpromise'/>
+
 
 ## [手写Promise(部分功能)](./Promise.js)
 
@@ -176,7 +166,7 @@ func().then(
 
 ---
 
-<span id='order'/>
+
 
 ## 执行顺序
 

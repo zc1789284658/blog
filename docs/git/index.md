@@ -81,7 +81,7 @@ $ cd ~/.ssh
 
 ```bash
 $ ssh-agent
-# if windows , use Administrator account to excuse POWERSHELL，and excute `Set-Service -Name ssh-agent -StartupType automatic`，then excute `ssh-agent`
+# if windows , use Administrator account to excuse POWERSHELL,and excute `Set-Service -Name ssh-agent -StartupType automatic`,then excute `ssh-agent`
 $ ssh-add C:\Users\EDZ\.ssh\id_rsa
 $ ssh-add C:\Users\EDZ\.ssh\id_rsa_github
 ```

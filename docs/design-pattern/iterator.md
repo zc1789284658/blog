@@ -1,23 +1,11 @@
----
-title: 迭代器模式
-date: 2019-06-25
-tags: [js]
-categories: [设计模式]
----
 # 迭代器模式
-目录：
-- [涵义](#meaning)
-- [分类](#classification)
-- [自定义内部迭代器](#inner)
-- [自定义外部迭代器](#outer)
-- [ES6迭代器接口](#iterator)
-- [ES6 中的 of关键字](#of)
 
-<span id='meaning' />
+
+
 
 > 提供一种方法顺序访问一个集合对象中的各个元素，而又不需要暴露该对象的内部表示。使用迭代器模式后，即使不关心对象的内部构造，也能按顺序访问其中的每个元素
 
-<span id='classification' />
+
 
 - 外部迭代器 
     - 必须显式地请求迭代下一个元素,如var next = Iterator.next()
@@ -25,7 +13,7 @@ categories: [设计模式]
     - 传入函数，自动根据下标取元素执行函数
 
 
-<span id='inner' />
+
 
 > 自定义内部迭代器
 
@@ -49,7 +37,7 @@ forEach([1,2,3,4,5],function(item , idx){
 //5 4
 ```
 
-<span id='outer' />
+
 
 > 自定义外部迭代器（和java中的Iterator功能类似）
 
@@ -84,7 +72,7 @@ console.log(iterator.next(),iterator.getCurrentItem(),iterator.isDone())//undefi
 console.log(iterator.next(),iterator.getCurrentItem(),iterator.isDone())//undefined*2 true
 ```
 
-<span id='iterator' />
+
 
 > 对于ES6中部分实现iterator接口的数据类型，可以使用xxx.[Symbol.iterator]()获取迭代器
 
@@ -98,7 +86,7 @@ console.log(iterator.next());  //{ value: 3, done: false }
 console.log(iterator.next());  //{ value: undefined, done: true }
 ```
 
-<span id='of' />
+
 
 > ES6 中的 of关键字，可以对所有实现了iterator接口的对象进行迭代
 

@@ -1,26 +1,9 @@
----
-title: TCP UDP
-date: 2019-06-25
-tags: [net]
-categories: [后端]
----
 # TCP UDP
-目录：
-- [TCP流程](#tcpstep)
-- [TCP与UDP基本区别](#basediff)
-- [TCP应用场景](#tcpscene)
-- [UDP应用场景](#udpscene)
-- [具体编程时的区别](#diffinprogram)
-- [编程区别](#diff)
-- [基于上述不同，UDP和TCP编程步骤也有些不同](#step)
-- [UDP补充](#udpmore)
-- [TCP补充](#tcpmore)
-- [TCP与UDP区别总结](#summary)
-- [网络攻击](#atk)
+
 
 <!--more-->
 
-<span id='tcpstep'/>
+
 
 ## TCP流程
 ### tcp 三次握手：确认双方收发信息能力的过程
@@ -36,7 +19,7 @@ categories: [后端]
     b->a    发完了可以挂断了
     a->b    挂了，别回
 
-<span id='basediff'/>
+
 
 ## TCP与UDP基本区别
 
@@ -49,7 +32,7 @@ categories: [后端]
 
 ---
 
-<span id='tcpscene'/>
+
 
 ## TCP应用场景
 当对网络通信质量有要求时，比如：整个数据要准确无误的传递给对方，这往往对于一些要求可靠的应用，比如HTTP,HTTPS,FTP等传输文件的协议，POP,SMTP等邮件的传输协议。常见使用TCP协议的应用： 
@@ -58,7 +41,7 @@ categories: [后端]
 3. Outlook:POP，SMTP 
 4. QQ文件传输
 
-<span id='udpscene'/>
+
 
 ## UDP应用场景：
 
@@ -74,7 +57,7 @@ categories: [后端]
 
 ---
 
-<span id='diffinprogram'/>
+
 
 ## 具体编程时的区别
 
@@ -87,7 +70,7 @@ categories: [后端]
  
 ---
 
-<span id='diff'/>
+
 
 ## 编程区别
 
@@ -99,7 +82,7 @@ categories: [后端]
 
 ---
 
-<span id='step'/>
+
 
 ## 基于上述不同，UDP和TCP编程步骤也有些不同，如下：
 
@@ -146,7 +129,7 @@ categories: [后端]
 
 ---
 
-<span id='udpmore'/>
+
 
 ## UDP补充：
 
@@ -161,7 +144,7 @@ categories: [后端]
 
 ---
 
-<span id='tcpmore'/>
+
 
 ## TCP补充：
 
@@ -171,7 +154,7 @@ categories: [后端]
 
 ---
 
-<span id='summary'/>
+
 
 ## TCP与UDP区别总结：
 
@@ -184,7 +167,7 @@ categories: [后端]
 
 ---
 
-<span id='atk'/>
+
 
 ## 网络攻击
 

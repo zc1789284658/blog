@@ -1,36 +1,22 @@
----
-title: 收藏网址
-date: 2019-06-25
-tags: [收藏网址]
-categories: [收藏]
----
+
 # 推荐网站
-目录：
-- [jsbin](#jsbin)
-- [babeljs](#babeljs)
-- [颜色搭配](#color)
-- [前端](#front)
-- [后端](#back)
-- [字体](#font)
-- [短视频素材](#ts)
-- [壁纸](#wallpaper)
-<!--more-->
+
 ---
-<span id='jsbin'/>
+
 
 1. [jsbin](https://jsbin.com/?html,output)
 ---
-<span id='babeljs'/>
+
 
 2. [babeljs](https://babeljs.io/)
 ---
-<span id='color'/>
+
 
 3. 颜色搭配
     - [⭐material palette](https://www.materialpalette.com/)
     - [flat ui](https://flatuicolors.com/)
 ---
-<span id='front'/>
+
 
 4. 前端 | front-end
     - vue
@@ -63,7 +49,7 @@ categories: [收藏]
         - [JS板块](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
 ---
 
-<span id='back'/>
+
 
 5. 后端 | back-end
     - koa2
@@ -81,14 +67,14 @@ categories: [收藏]
         - [DNS解析](https://www.dnspod.cn/) | 无缝迁移/别名绑定
 ---
 
-<span id='font'/>
+
 
 6. 字体
     - [⭐googlefonts](http://www.googlefonts.cn/)
     - [DaFont](https://www.dafont.com/)
     - [Fonts2u](https://fonts2u.com/)
 ---
-<span id='ts'/>
+
 
 7. 短视频素材
     - 免费/无需登陆/需要翻墙
@@ -98,7 +84,7 @@ categories: [收藏]
         - [Stock Footage for Free](stockfootageforfree.com)
     - 收费
 ---
-<span id='wallpaper'/>
+
 
 8. 壁纸
     - [⭐wallhaven](https://wallhaven.cc)

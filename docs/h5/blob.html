@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <input type='file' id='file' />
+    <button onclick="toBlobSrc()">点我将文件框中的视频以blob的形式加载到video2中</button>
+    <hr>
+    <video src="" controls id='video1'></video>
+    <video src="" controls id='video2'></video>
+</body>
+<script>
+    function $(selector) {
+        var result = document.querySelectorAll(selector);
+        if (result.length === 1) {
+            return result[0]
+        } else if (result.length > 1) {
+            return result
+        }
+        return null;
+    }
+    window.onload = function () {
+        $('#video1').src = 'https://www.w3cschool.cn/statics/demosource/movie.mp4';
+    }
+    function toBlobSrc() {
+        $('#video2').src = URL.createObjectURL($('#file').files[0])
+    }
+</script>
+
+</html>

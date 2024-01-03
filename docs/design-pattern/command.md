@@ -1,19 +1,5 @@
----
-title: 命令模式
-date: 2019-06-25
-tags: [js]
-categories: [设计模式]
----
 # 命令模式
-目录：
-- [定义](#difine)
-- [案例](#example)
-- [添加撤销](#undo)
-- [dom发起者](#dom)
-- [重做](#reply)
-- [宏命令](#macroCommand)
 
-<span id="difine"><span>
 ### 定义
 > 命令模式是一种松耦合的方式，将发布者和执行者分离，命令模式中的命令指的是一个执行某些特定事情的指令。
 
@@ -28,7 +14,6 @@ categories: [设计模式]
 - 在实际情况中，发起者可能是个dom非正常class元素，封装可能不同，不要太诧异即可。
 - 由上可以得知，操作需要被封装，接收者需要被封装，如下例：
 
-<span id="example"><span>
 ### 案例
 ```js
 //接收者
@@ -77,9 +62,8 @@ soldier.setExec(function(){
 general.invoke()//Receiver { fire: true, exec: [Function] }
 ```
 
-
-<span id="undo"><span>
 ### 添加撤销
+
 > 在每次执行excute之前，记录上一个或者上几个状态，以便于undo时进行撤销
 ```js
 
@@ -140,8 +124,8 @@ general.invoke()//开始 Receiver { name: 'soldier', exec: [Function] }
 
 ```
 
-<span id="dom"><span>
 > dom元素代替上述发起者，下例出自 【曾探】的《Javascript设计模式与开发实践》
+
 ```js
 var ball = document.getElementById('ball')
 var pos = document.getElementById('pos')
@@ -176,8 +160,8 @@ cancelBtn.onclick = ()=>{
 
 ```
 
-<span id="reply"><span>
-### 重做
+### 
+
 > 当撤销操作不可逆时，可以将历史操作记录在数组等有序列表中，然后清楚已有的对象，重新执行一遍历史操作。
 
 ```js
@@ -228,14 +212,18 @@ function reply(){
         command()
     }
 }
+
 ``` 
-<span id="macroCommand"><span>
+
 ### 宏命令
+
 > 宏命令是一组命令的集合，可以一次执行一批命令。宏命令是组合模式和命令模式的组合产物
     
 关键点:
+
 - 一组命令（都实现命令的接口，如都含有excute函数）
 - 一次执行一批（从命令集合中，遍历命令，执行excute函数）
+
 ```js
 var Command1 = {
     excute(){console.log('this is command1')}
@@ -279,5 +267,6 @@ this is command1
 ```
 
 > 查看[宏命令](#macroCommand)中的命令，可以发现
+
 - 其中的Command1/2/3中并未包含任何receiver的信息，这种完全将接收者和发送者解耦的命令可以认为是`傻瓜式`的，
 - 其与[策略模式](https://github.com/zc1789284658/Code-Note/edit/master/design-pattern/Strategy.md)非常接近，从代码结构上无法区分，只能从意图上进行区分

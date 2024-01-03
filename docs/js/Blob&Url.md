@@ -1,12 +1,6 @@
----
-title: BLOB & URL
-date: 2019-06-25
-tags: [js]
-categories: [前端,原生js]
----
 # Blob & Url
 
-[引发场景](./h5/index.md)
+[引发场景](./index.md)
 
 拓展
 - File​Reader

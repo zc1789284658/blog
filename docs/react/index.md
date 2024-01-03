@@ -1,10 +1,4 @@
-﻿---
-title: React相关
-date: 2019-06-25
-tags: [react,js]
-categories: [前端]
----
-# REACT
+﻿# REACT
 
 ## 基础概念
 ```

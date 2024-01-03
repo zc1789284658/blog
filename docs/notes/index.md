@@ -1,9 +1,3 @@
----
-title: 笔记
-date: 2019-06-25
-tags: [performance,js]
-categories: [前端,优化]
----
 # NOTES
 
 ## web 性能

@@ -1,10 +1,3 @@
----
-title: webpack配置
-date: 2019-06-25
-tags: [webpack , js]
-categories: [前端]
----
-
 # 加载器（loader）
 ## file-loader
         webpack最终会将各个模块打包成一个文件，因此我们样式中的url路径是相对入口html页面的，而不是相对于原始css文件所在的路径的，这会导致图片引入失败。
@@ -79,7 +72,8 @@ new webpack.optimize.SplitChunksPlugin({
     ```
 
 # webpack.config.js目录结构
-```
+
+```js
 const pathlib = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')

@@ -1,9 +1,3 @@
----
-title: Object.defineProperty && Object.defineProperties
-date: 2019-06-25
-tags: [js]
-categories: [前端,原生js]
----
 # Object.defineProperty && Object.defineProperties
 - value/writable 不能与 get/set 同时被定义，因为一旦可以设置 get/set，那么 get/set 会篡改 value 以及 writable，引起预料之外的问题
 - 意思大概就是不可能定一个属性即可以对它进行正常读写，又可以在它上面架设一层 getter/setter 来进行访问改写。

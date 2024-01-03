@@ -1,9 +1,3 @@
----
-title: 单例模式
-date: 2019-06-25
-tags: [js]
-categories: [设计模式]
----
 # 单例模式
 > 方法1：将instance挂载到函数本身
 ```js

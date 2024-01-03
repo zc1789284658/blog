@@ -1,9 +1,4 @@
----
-title: 手写Promise(部分功能)
-date: 2019-06-25
-tags: [js]
-categories: [前端]
----
+
 # 手写Promise(部分功能)
 ```js
 function Promise(fn) {

@@ -4,9 +4,9 @@
 ## 定义 
 一个XML bitmap是一个在XML文件中定义的指向一个bitmap文件的资源。其效果是作为一个原始位图文件的别名，并且可以指定一些额外的属性。
 
-注意：你可以在<item>节点中使用<bitmap>作为它的子节点。比如，当你定义一个state list或者layer list的时候，可以包括一个android:drawable属性
+注意：你可以在<item/>节点中使用<bitmap/>作为它的子节点。比如，当你定义一个state list或者layer list的时候，可以包括一个android:drawable属性
 
-Note: You can use a <bitmap> element as a child of an<item> element. Forexample, when creating astate list orlayer list,you can exclude the android:drawableattribute from an<item> element and nest a<bitmap> inside it that defines the drawable item.
+Note: You can use a <bitmap/> element as a child of an<item/> element. Forexample, when creating astate list orlayer list,you can exclude the android:drawableattribute from an<item/> element and nest a<bitmap/> inside it that defines the drawable item.
 
 ## 文件位置：
 
@@ -23,20 +23,20 @@ filename作为资源的ID
 In Java: R.drawable.filename
 In XML: @[package:]drawable/filename
 
-## 语法:    
+## 语法:
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <bitmap
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@[package:]drawable/drawable_resource"
+    android:src="@[package:]drawable/drawable_resource"  
     android:antialias=["true" | "false"]
     android:dither=["true" | "false"]
     android:filter=["true" | "false"]
-    android:gravity=["top" | "bottom" | "left" | "right" | "center_vertical" |
-                      "fill_vertical" | "center_horizontal" | "fill_horizontal" |
-                      "center" | "fill" | "clip_vertical" | "clip_horizontal"]
-    android:tileMode=["disabled" | "clamp" | "repeat" | "mirror"] />
+    android:gravity=["top" | "bottom" | "left" | "right" | "center_vertical" |"fill_vertical" | "center_horizontal" | "fill_horizontal" |"center" | "fill" | "clip_vertical" | "clip_horizontal"]
+    android:tileMode=["disabled" | "clamp" | "repeat" | "mirror"]   />
 ```
+
 ## 节点介绍：   
 
 `<bitmap>`  定义位图的来源和属性
@@ -45,7 +45,7 @@ In XML: @[package:]drawable/filename
 
 - xmlns:android 
 
-    > 类型:String。定义了XML的命名空间，必须是"http://schemas.android.com/apk/res/android"。如果<bitmap>是根元素，那么他是必须的，如果是嵌套在<itme>里面，那么就不是必须的。
+    > 类型:String。定义了XML的命名空间，必须是"http://schemas.android.com/apk/res/android"。如果<bitmap/>是根元素，那么他是必须的，如果是嵌套在<item/>里面，那么就不是必须的。
 
 - android:src
 

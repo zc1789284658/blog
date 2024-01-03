@@ -1,9 +1,3 @@
----
-title: 策略模式
-date: 2019-06-25
-tags: [js]
-categories: [设计模式]
----
 # 策略模式
 ```js
 var stratygies = {

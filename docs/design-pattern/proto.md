@@ -1,9 +1,3 @@
----
-title: 原型模式
-date: 2019-06-25
-tags: [js]
-categories: [设计模式]
----
 # 原型模式
 > [以之前的构造器模式为例](https://github.com/zc1789284658/Code-Note/edit/master/design-pattern/constructor.md)，修改后
 ```js

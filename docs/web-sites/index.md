@@ -27,6 +27,8 @@
         - [vue-cli](https://cli.vuejs.org/zh/)
         - [element-ui](https://element.eleme.cn/#/zh-CN)
         - [iview](https://www.iviewui.com/)
+    - React
+        - [官网](https://react.dev/)
     - 微信
         - [公众平台](https://mp.weixin.qq.com/)
         - [指南·小程序](https://developers.weixin.qq.com/miniprogram/dev/)
@@ -57,6 +59,8 @@
         - [官方github文档](https://github.com/demopark/koa-docs-Zh-CN)
         - [进阶笔记](https://chenshenhai.github.io/koa2-note/)
         - [koa2设计模式](https://github.com/chenshenhai/koajs-design-note)
+    - nestjs
+        - [官网](https://nestjs.com/)
     - node
         - [官网](https://nodejs.org/en/)
         - [yarn | 相对于npm对版本的约束更加严格](https://yarnpkg.com)
@@ -80,7 +84,7 @@
     - 免费/无需登陆/需要翻墙
         - [pexels](https://www.pexels.com/videos/)
         - [wedistill](http://www.wedistill.io/)
-        - [pixabay](pixabay.com/videos)
+        - [pixabay](https://pixabay.com/videos)
         - [Stock Footage for Free](stockfootageforfree.com)
     - 收费
 ---

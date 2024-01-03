@@ -1,17 +1,4 @@
----
-title: vue中的mixin
-date: 2019-06-25
-tags: [vue,js]
-categories: [前端]
----
-
 # mixin | 混入
-目录：
-- [基础](#mixin-basic)
-- [选项合并](#mixin-optioned)
-- [全局混入](#mixin-global)
-
-<!--more-->
 
 #### 基础 
 

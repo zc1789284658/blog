@@ -1,9 +1,3 @@
----
-title: HTTP
-date: 2019-06-25
-tags: [net]
-categories: [后端]
----
 # HTTP
 ## http状态码
     1xx         信息

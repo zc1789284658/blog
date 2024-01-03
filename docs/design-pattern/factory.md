@@ -1,9 +1,3 @@
----
-title: 工厂模式
-date: 2019-06-25
-tags: [js]
-categories: [设计模式]
----
 # 工厂模式
 > ES5
 ```js

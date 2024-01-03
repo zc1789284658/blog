@@ -18,7 +18,7 @@ Android原生的白屏问题可以通过为 Launcher Activity 设置 windowBackg
 
 ## 配置xml
 - 打开android\app\src\main\res\drawable\launch_background.xml
-- 将<item>里面的内容反注释，并且准备一张图片分辨率1080 x 1920,放入android\app\src\main\res\mipmap-xxhdpi即可。注意名字改成launch_image即可。或者你可以用别的名字，把上面的xml文件改一下即可
+- 将<item/>里面的内容反注释，并且准备一张图片分辨率1080 x 1920,放入android\app\src\main\res\mipmap-xxhdpi即可。注意名字改成launch_image即可。或者你可以用别的名字，把上面的xml文件改一下即可
 
 ```xml
     <?xml version="1.0" encoding="utf-8"?>

@@ -1,9 +1,3 @@
----
-title: Linux
-date: 2019-06-25
-tags: [linux]
-categories: [后端]
----
 # Linux
 ## service [xxx] [command]
 ```

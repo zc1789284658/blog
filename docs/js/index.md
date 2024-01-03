@@ -1,10 +1,3 @@
----
-title: 
-date: 2019-06-25
-tags: [js]
-categories: [汇总,前端]
----
-
 # JS
 
 ## [Promise](./Promise.md)

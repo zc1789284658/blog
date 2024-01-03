@@ -1,15 +1,9 @@
 # Flutter闪屏
-目录：
-- [问题描述](#desc)
-- [问题分析](#analy)
-- [解决方案](#resolve)
-- [配置xml](#setting)
-- [各文件夹对应的分辨率](#pixel)
-- [前后效果对比](#compare)
-## 问题描述 <span id='desc' />
+
+## 问题描述
 Flutter 应用在 Android 端上启动时会有一段很明显的白屏现象，白屏的时长由设备的性能决定，设备性能越差，白屏时间越长。
 
-## 问题分析 <span id='analy' />
+## 问题分析
 其实启动白屏的问题在Android原生应用上也是一个常见问题，大致是因为从用户点击 Launcher Icon 到应用首页显示之间，Android 系统在完成应用的初始化工作，其流程如下：
 <!-- ![安卓流程](./images/android.jpg) -->
 ![安卓流程](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/android.jpg)
@@ -19,13 +13,14 @@ Flutter 应用在 Android 端上启动时会有一段很明显的白屏现象，
 在 Flutter Android 端上，白屏的问题会更加严重，因为除了 Android 应用启动耗时外，还增加了 Flutter 初始化耗时。
 ![flutter流程](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/flutter.jpg)
 
-## 解决方案 <span id='resolve' />
+## 解决方案
 Android原生的白屏问题可以通过为 Launcher Activity 设置 windowBackground 解决，而 Flutter 也是基于此办法，同时优化了 Flutter 初始化阶段的白屏问题（覆盖一个launchView），只用两步设置便能解决 Flutter 中白屏问题。
 
-## 配置xml <span id='setting' />
+## 配置xml
 - 打开android\app\src\main\res\drawable\launch_background.xml
-- 将<item>里面的内容反注释，并且准备一张图片分辨率1080 x 1920,放入android\app\src\main\res\mipmap-xxhdpi即可。注意名字改成launch_image即可。或者你可以用别的名字，把上面的xml文件改一下即可
-    ```xml
+- 将<item/>里面的内容反注释，并且准备一张图片分辨率1080 x 1920,放入android\app\src\main\res\mipmap-xxhdpi即可。注意名字改成launch_image即可。或者你可以用别的名字，把上面的xml文件改一下即可
+
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <!-- Modify this file to customize your launch splash screen -->
     <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
@@ -37,15 +32,14 @@ Android原生的白屏问题可以通过为 Launcher Activity 设置 windowBackg
         </item>
     </layer-list>
 
-    ```
-- 
+```
 
-## 各文件夹对应的分辨率 <span id='pixel' />
+## 各文件夹对应的分辨率
 密度	| ldpi|	mdpi|	hdpi	|xhdpi|	xxhdpi	|xxxhdpi
 --|--|--|--|--|--|--
 代表分辨率	|240 x 320	|320 x 480	|480 x 800|	720 x 1280|	1080 x 1920|	3840×2160
 
-## 前后效果对比 <span id='compare' />
+## 前后效果对比
 <!-- 添加闪屏前：![添加闪屏前](./images/no-splash.gif) -->
 添加闪屏前：![添加闪屏前](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/no-splash.gif)
 

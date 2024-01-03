@@ -1,9 +1,3 @@
----
-title: vue中的状态管理
-date: 2019-06-25
-tags: [vue,js]
-categories: [前端]
----
 # vuex | 全局状态管理
 ### 5.1 状态管理
 - 1.state

@@ -1,21 +1,6 @@
----
-title: 职责链模式
-date: 2019-06-25
-tags: [js]
-categories: [设计模式]
----
 # 职责链模式
-目录
-- [定义](#define)
-- [场景](#scene)
-- [代码案例](#codeCase)
-    - [不使用职责链](#unuse)
-    - [使用职责链](#use)
-    - [职责链优化](#optimize)
 
 ---
-
-<span id='define'/>
 
 ### 1.定义
 
@@ -23,23 +8,19 @@ categories: [设计模式]
 
 ---
 
-<span id='scene'/>
-
 ### 2.场景
 1. 上公交车时，人太多，无法直接将票钱传递到售票员手中，此时需要通过其他乘客进行传递
 2. 传递小纸条
 
 ---
 
-<span id='codeCase'/>
-
 ### 3.代码案例
 
 > 场景：商城打折，普通用户不打折，会员打95折，超级会员打8折，
 
-<span id='codeCase'/>
 
 3.1 __不使用职责链的代码__
+
 ```js
 var orderRate = function(type){
     if(type===0){
@@ -59,9 +40,8 @@ orderRate(1);
 orderRate(2);
 ```
 
-<span id='use'/>
-
 3.2 __使用职责链重构代码__
+
 ```js
 var SuperVipRate=(type)=>{
     if(type === 2){
@@ -90,10 +70,12 @@ SuperVipRate(1)
 SuperVipRate(0)
 ```
 
-<span id='optimize'/>
+
 
 3.3 __优化职责链__
+
 > 上述职责链模式代码未免耦合性太大，进行解耦
+
 ```js
 /*超级会员逻辑*/
 var SuperVipRate=(type)=>{
@@ -152,8 +134,6 @@ Chain1.run(0);      //普通用户
 
 ---
 
-<span id='aop'/>
-
 ### 4.使用AOP实现职责链模式
 ```js
 Function.prototype.after = function(fn){
@@ -175,7 +155,7 @@ AopChain(0)     //普通用户
 ---
 
 ### 5.AOP实现装饰者模式 / AOP实现职责链模式 的区别
-- [AOP实现装饰者模式](./Decorator.md/#aop)：
+- [AOP实现装饰者模式](./Decorator)：
 > 在不改变已有函数内部的情况下**添加一些新的功能**，你可以想象一下同心圆，你每调用一次after，就相当于给你的圆外面又加了一个圆来包裹住它。**注意它们是包含关系**
 
 - AOP实现职责链模式：

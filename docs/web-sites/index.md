@@ -1,36 +1,22 @@
----
-title: 收藏网址
-date: 2019-06-25
-tags: [收藏网址]
-categories: [收藏]
----
+
 # 推荐网站
-目录：
-- [jsbin](#jsbin)
-- [babeljs](#babeljs)
-- [颜色搭配](#color)
-- [前端](#front)
-- [后端](#back)
-- [字体](#font)
-- [短视频素材](#ts)
-- [壁纸](#wallpaper)
-<!--more-->
+
 ---
-<span id='jsbin'/>
+
 
 1. [jsbin](https://jsbin.com/?html,output)
 ---
-<span id='babeljs'/>
+
 
 2. [babeljs](https://babeljs.io/)
 ---
-<span id='color'/>
+
 
 3. 颜色搭配
     - [⭐material palette](https://www.materialpalette.com/)
     - [flat ui](https://flatuicolors.com/)
 ---
-<span id='front'/>
+
 
 4. 前端 | front-end
     - vue
@@ -41,6 +27,8 @@ categories: [收藏]
         - [vue-cli](https://cli.vuejs.org/zh/)
         - [element-ui](https://element.eleme.cn/#/zh-CN)
         - [iview](https://www.iviewui.com/)
+    - React
+        - [官网](https://react.dev/)
     - 微信
         - [公众平台](https://mp.weixin.qq.com/)
         - [指南·小程序](https://developers.weixin.qq.com/miniprogram/dev/)
@@ -63,7 +51,7 @@ categories: [收藏]
         - [JS板块](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
 ---
 
-<span id='back'/>
+
 
 5. 后端 | back-end
     - koa2
@@ -71,6 +59,8 @@ categories: [收藏]
         - [官方github文档](https://github.com/demopark/koa-docs-Zh-CN)
         - [进阶笔记](https://chenshenhai.github.io/koa2-note/)
         - [koa2设计模式](https://github.com/chenshenhai/koajs-design-note)
+    - nestjs
+        - [官网](https://nestjs.com/)
     - node
         - [官网](https://nodejs.org/en/)
         - [yarn | 相对于npm对版本的约束更加严格](https://yarnpkg.com)
@@ -81,24 +71,24 @@ categories: [收藏]
         - [DNS解析](https://www.dnspod.cn/) | 无缝迁移/别名绑定
 ---
 
-<span id='font'/>
+
 
 6. 字体
     - [⭐googlefonts](http://www.googlefonts.cn/)
     - [DaFont](https://www.dafont.com/)
     - [Fonts2u](https://fonts2u.com/)
 ---
-<span id='ts'/>
+
 
 7. 短视频素材
     - 免费/无需登陆/需要翻墙
         - [pexels](https://www.pexels.com/videos/)
         - [wedistill](http://www.wedistill.io/)
-        - [pixabay](pixabay.com/videos)
+        - [pixabay](https://pixabay.com/videos)
         - [Stock Footage for Free](stockfootageforfree.com)
     - 收费
 ---
-<span id='wallpaper'/>
+
 
 8. 壁纸
     - [⭐wallhaven](https://wallhaven.cc)

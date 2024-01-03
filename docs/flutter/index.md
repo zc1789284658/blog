@@ -1,11 +1,4 @@
 # Flutter
-目录
-- [安装](#install)
-- [创建Flutter应用](#create)
-- [添加google admob广告](#admob)
-- [widgets目录](#widgets)
-
-<span id='install'/>
 
 ## 1.[安装](https://flutterchina.club/setup-windows/)
 - 下载FlutterSdk
@@ -13,16 +6,12 @@
 - 安装AndroidStudio以及Dart,Flutter Plugin
 - 设置AndroidStudio模拟器
 
-<span id='create'/>
-
 ## 2.创建Flutter应用
 - 第一步完成后，AndroidStudio中左上角 `File -> new -> new Flutter Project...` 即可
 
-<span id='admob'/>
 
 ## 3.[`添加google admob广告`](./googleAdmob.md)
 
-<span id='widgets'/>
 
 ## 4.[Widgets 目录](https://flutterchina.club/widgets/)
 - [基础widgets](https://flutterchina.club/widgets/basics/)

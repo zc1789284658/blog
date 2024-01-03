@@ -1,19 +1,6 @@
----
-title: vue中的mixin
-date: 2019-06-25
-tags: [vue,js]
-categories: [前端]
----
-
 # mixin | 混入
-目录：
-- [基础](#mixin-basic)
-- [选项合并](#mixin-optioned)
-- [全局混入](#mixin-global)
 
-<!--more-->
-
-#### 基础 <span id='mixin-basic' />
+#### 基础 
 
 混入 (mixin) 提供了一种非常灵活的方式，来分发 Vue 组件中的可复用功能。一个混入对象可以包含任意组件选项。当组件使用混入对象时，所有混入对象的选项将被“混合”进入该组件本身的选项。
 例子：
@@ -37,7 +24,7 @@ var Component = Vue.extend({
 
 var component = new Component() // => "hello from mixin!"
 ```
-#### 选项合并 <span id='mixin-optioned' />
+#### 选项合并 
 当组件和混入对象含有同名选项时，这些选项将以恰当的方式进行“合并”。
 
 比如，数据对象在内部会进行递归合并，`并在发生冲突时以组件数据优先`。
@@ -48,7 +35,7 @@ var component = new Component() // => "hello from mixin!"
 
 注意：Vue.extend() 也使用同样的策略进行合并。
 
-#### 全局混入 <span id='mixin-global' />
+#### 全局混入 
 
 混入也可以进行全局注册。`使用时格外小心！一旦使用全局混入，它将影响每一个之后创建的 Vue 实例。`使用恰当时，这可以用来为自定义选项注入处理逻辑。
 ```js
@@ -67,6 +54,7 @@ new Vue({
 })
 // => "hello!"
 ```
+
 `!!!`请谨慎使用全局混入，因为它会影响每个单独创建的 Vue 实例 (包括第三方组件)。大多数情况下，只应当应用于自定义选项，就像上面示例一样。推荐将其作为插件发布，以避免重复应用混入。
 
 #### 自定义选项合并策略

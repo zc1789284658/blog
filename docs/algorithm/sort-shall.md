@@ -1,9 +1,3 @@
----
-title: 希尔排序
-date: 2019-06-25
-tags: [js]
-categories: [算法]
----
 # 希尔排序
 
 ```js

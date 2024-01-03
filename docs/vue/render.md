@@ -1,31 +1,8 @@
----
-title: vue中的render
-date: 2019-06-25
-tags: [vue,js]
-categories: [前端]
----
-# 渲染函数 & JSX
-目录：
-- [基础](#render-basic)
-- [节点、树以及虚拟 DOM](#render-vnode)
-    - [虚拟 DOM](#)
-- [createElement 参数](#render-createElement-arguments)
-    - [深入数据对象](#)
-    - [完整示例](#)
-    - [约束](#)
-- [使用 JavaScript 代替模板功能](#render-js-as-template)
-    - [v-if 和 v-for](#)
-    - [v-model](#)
-    - [事件 & 按键修饰符](#)
-    - [插槽](#)
-- [JSX](#render-jsx)
-- [函数式组件](#render-functional-component)
-    - [向子元素或子组件传递特性和事件](#)
-    - [slots() 和 children 对比](#)
-- [模板编译](#render-template)
 
-<!--more-->
-## 基础 <span id='render-basic' />
+# 渲染函数 & JSX
+
+
+## 基础 
 
 Vue 推荐在绝大多数情况下使用模板来创建你的 HTML。然而在一些场景中，你真的需要 JavaScript 的完全编程的能力。这时你可以用渲染函数，它比模板更接近编译器。
 
@@ -96,7 +73,7 @@ Vue.component('anchored-heading', {
 
 ---
 
-## 节点、树以及虚拟 DOM <span id='render-vnode' />
+## 节点、树以及虚拟 DOM 
 
 在深入渲染函数之前，了解一些浏览器的工作原理是很重要的。以下面这段 HTML 为例：
 ```html
@@ -134,7 +111,7 @@ return createElement('h1', this.blogTitle)
 ```
 createElement 到底会返回什么呢？其实不是一个实际的 DOM 元素。它更准确的名字可能是 createNodeDescription，因为它所包含的信息会告诉 Vue 页面上需要渲染什么样的节点，包括及其子节点的描述信息。我们把这样的节点描述为“虚拟节点 (virtual node)”，也常简写它为“VNode”。“虚拟 DOM”是我们对由 Vue 组件树建立起来的整个 VNode 树的称呼。
 
-## createElement 参数 <span id='render-createElement-arguments' />
+## createElement 参数 
 
 接下来你需要熟悉的是如何在 createElement 函数中使用模板中的那些功能。这里是 createElement 接受的参数：
 ```js
@@ -274,7 +251,7 @@ Vue.component('anchored-heading', {
   }
 })
 ```
-### 约束 <span id='render-constraint' />
+### 约束 
 VNode 必须唯一
 组件树中的所有 VNode 必须是唯一的。这意味着，下面的渲染函数是不合法的：
 ```js
@@ -298,7 +275,7 @@ render: function (createElement) {
 }
 
 ```
-## 使用 JavaScript 代替模板功能 <span id='render-js-as-template' />
+## 使用 JavaScript 代替模板功能 
 ### v-if 和 v-for
 只要在原生的 JavaScript 中可以轻松完成的操作，Vue 的渲染函数就不会提供专有的替代方法。比如，在模板中使用的 v-if 和 v-for：
 ```html
@@ -426,7 +403,7 @@ render: function (createElement) {
   ])
 }
 ```
-## JSX <span id='render-jsx' />
+## JSX 
 如果你写了很多 render 函数，可能会觉得下面这样的代码写起来很痛苦：
 ```js
 createElement(
@@ -468,7 +445,7 @@ new Vue({
 
 要了解更多关于 JSX 如何映射到 JavaScript，请阅读使用文档。
 
-## 函数式组件 <span id='render-functional-component' />
+## 函数式组件 
 之前创建的锚点标题组件是比较简单，没有管理任何状态，也没有监听任何传递给它的状态，也没有生命周期方法。实际上，它只是一个接受一些 prop 的函数。
 在这样的场景下，我们可以将组件标记为 functional，这意味它无状态 (没有响应式数据)，也没有实例 (没有 this 上下文)。
 一个函数式组件就像这样：
@@ -594,5 +571,5 @@ Vue.component('my-functional-button', {
 ```
 对于这个组件，children 会给你两个段落标签，而 slots().default 只会传递第二个匿名段落标签，slots().foo 会传递第一个具名段落标签。同时拥有 children 和 slots()，因此你可以选择让组件感知某个插槽机制，还是简单地通过传递 children，移交给其它组件去处理。
 
-## 模板编译 <span id='render-template' />
+## 模板编译 
 你可能会有兴趣知道，Vue 的模板实际上被编译成了渲染函数。这是一个实现细节，通常不需要关心。但如果你想看看模板的功能具体是怎样被编译的，可能会发现会非常有意思。下面是一个使用 Vue.compile 来实时编译模板字符串的简单示例：

@@ -1,18 +1,4 @@
----
-title: 享元模式
-date: 2019-06-25
-tags: [js]
-categories: [设计模式]
----
 # 享元模式
-目录：
- - [涵义](#meaning)
- - [案例](#case)
- - [使用经验](#exp)
- - [以微云的上传第一版为反例](#bad)
- - [重新定义Upload对象](#good)
- - [对象池](#pool)
-
 ---
 
 <span id='meaning'></span>

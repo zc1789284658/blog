@@ -1,9 +1,3 @@
----
-title: 兼容处理svg
-date: 2019-06-25
-tags: [svg]
-categories: [前端,兼容]
----
 # 兼容处理svg
 
 ## 1、svg image标签降级技术：

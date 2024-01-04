@@ -1,4 +1,3 @@
-
 # 手写Promise(部分功能)
 ```js
 function Promise(fn) {

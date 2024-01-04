@@ -6,9 +6,7 @@ svg不能很好的在anroid2.3中得到支持，需要额外的补充，IE8-以�
 
 svg image标签降级技术，这是一个名叫Alexey Ten首先提出来的，类似下面的代码：
 
-<!--more-->
-
-```css
+```html
 <svg width="96" height="96">
   <image xlink:href="svg.svg" src="svg.png" width="96" height="96" />
 </svg>
@@ -37,4 +35,4 @@ Modernizr有一个SVG测试，可以判定设备是否支持SVG，于是，我�
   background-image: url(image.svg), none;
 }
 ```
-　　其利用的技术是CSS3多背景，这是一个经验式技术，我们通过各种观察或者积累发现，浏览器只要支持了多背景，几乎无一例外支持SVG。于是，浏览器认识url(image.svg), none这个多背景声明，就使用SVG，否则，降级使用上面的png背景。
+其利用的技术是CSS3多背景，这是一个经验式技术，我们通过各种观察或者积累发现，浏览器只要支持了多背景，几乎无一例外支持SVG。于是，浏览器认识url(image.svg), none这个多背景声明，就使用SVG，否则，降级使用上面的png背景。

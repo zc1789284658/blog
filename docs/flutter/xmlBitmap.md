@@ -4,9 +4,9 @@
 ## 定义 
 一个XML bitmap是一个在XML文件中定义的指向一个bitmap文件的资源。其效果是作为一个原始位图文件的别名，并且可以指定一些额外的属性。
 
-注意：你可以在<item/>节点中使用<bitmap/>作为它的子节点。比如，当你定义一个state list或者layer list的时候，可以包括一个android:drawable属性
+注意：你可以在\<item>节点中使用\<bitmap>作为它的子节点。比如，当你定义一个state list或者layer list的时候，可以包括一个android:drawable属性
 
-Note: You can use a <bitmap/> element as a child of an<item/> element. Forexample, when creating astate list orlayer list,you can exclude the android:drawableattribute from an<item/> element and nest a<bitmap/> inside it that defines the drawable item.
+Note: You can use a \<bitmap> element as a child of an \<item> element. Forexample, when creating astate list orlayer list,you can exclude the android:drawableattribute from an \<item> element and nest a \<bitmap> inside it that defines the drawable item.
 
 ## 文件位置：
 

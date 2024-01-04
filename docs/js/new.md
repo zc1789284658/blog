@@ -1,14 +1,6 @@
 # new 
 
-
-
-<!--more-->
-
-
-
 ## __必须使用 new 关键字生成的写法__
-
-
 
 ### __this instanceof xx__
 
@@ -42,8 +34,6 @@ person1.__proto__ === Person.prototype  //true
 person instanceof Person  // true 
 ```
 
-
-
 ### __class new.target 属性__
 
 在 ES6 中，我们可以使用 class 关键词创建一个 类，每一个 class 类都有一个 new.target 属性，返回 new 命令所作用的构造函数。如果构造函数不是通过 new 操作符调用的， 那么 new.target 会返回 undefined , 因此这个属性同样可以确保 构造函数必须是通过 new 调用的。
@@ -65,9 +55,6 @@ class Person {
 ```
 
 ---
-
-
-
 ## __用原生js实现一个new方法__
 
 ### __首先写一个父类方法(包含参数name,age)：__

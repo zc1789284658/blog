@@ -2,8 +2,6 @@
 
 ## web 性能
 
-<!--more-->
-
 ### 1.资源方向
 
 - 图片压缩
@@ -43,48 +41,9 @@
   - vue : mixin/render/slot/  ->  setup
   - react: mixin/HOC/jsx      ->  hooks
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## 代码示例
-
-<h2 id='memorize'>memorize</h2>
 
 ```js
 function memorizer(fn, cache) {
@@ -135,8 +94,6 @@ duff([1, 2, 3, 4, 5, 6, 7, 8, 12], function(e) {
 });
 //$: 1 2 3 4 5 6 7 8 12
 ```
-
-<h2 id='merge'>merge Sort</h2>
 
 ```js
 //优化前-------------------------------

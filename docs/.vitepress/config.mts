@@ -13,6 +13,8 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "About", link: "/about" },
+      { text: "MDN", link: "https://developer.mozilla.org/zh-CN/" },
+      { text: "TsPlay", link: "https://www.typescriptlang.org/play" },
     ],
     sidebar: [
       {
@@ -34,7 +36,12 @@ export default defineConfig({
             collapsed: false,
             items: [
               { text: "react", link: "/react/" },
-              { text: "vue", link: "/vue/" },
+              {
+                text: "vue", items: [
+                  { text: "vue2", link: "/vue/vue2/" },
+                  { text: "vue3", link: "/vue/vue3/" },
+                ]
+              },
             ],
           },
         ],

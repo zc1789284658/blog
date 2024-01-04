@@ -1,12 +1,11 @@
 
 # vscode相关
 
-## 1.安装VSCode时，未添加右键快速打开文件夹/文件的解决方案
-
-<!--more-->
+## 安装VSCode时，未添加右键快速打开文件夹/文件的解决方案
 
 1. 方案1： 重新安装VSCode
-2. 方案2（推荐）： <br>
+2. 方案2（推荐）： \<br>
+
     手动添加注册表,新建纯文本文件，复制以下内容，将所有的`D:\\Develop\\Microsoft VS Code`替换成`你的本地VSCODE安装目录`后，文件后缀修改成`.reg`，`双击一路确定`即可
     ```
     Windows Registry Editor Version 5.00
@@ -37,18 +36,48 @@
     @="\"D:\\Develop\\Microsoft VS Code\\Code.exe\" \"%V\""
     ```
 
-## 2. 插件
+## 插件
 - [TSLint]() + [ESLint]()
-- [Vetur]()
 - [open in browser]() + [Debugger for Chrome]()
 - [Material Theme]() + [Atom One Dark Theme]() + [Highlight Line]()
-- [Flutter]() +[Dart]()
 - [Chinese(simplified)Language]()
 - [Beautify]()
-- [VSC Netease Music]()
-- [markdown-preview-enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/)
+- Auto Close Tag
+- Auto Rename Tag
+- Better Comments
+- Bookmarks
+- Casbin
+- Code Runner
+- Jest
+- CodeIf
+- Commit Message Editor
+- Compare Folders
+- Csscomb
+- CSV to Table
+- DotEnv
+- Draw.io
+- Eslint Chinese rules
+- eslint-disable-snippets
+- git-commit-plugin
+- Github Repositories
+- Jest Snippets
+- JSON5 syntax
+- Live Server
+- Live Share
+- Playwright Test for VSCode
+- Prettier
+- Prisma
+- Rainbow CSV
+- Random Everything
+- sneak mark
+- String Manipulation
+- Stylelint
+- TODO Tree
+- Volar
+- XML
 
-## 3. 添加代码片段（以markdown为例）
+## 添加代码片段（以markdown为例）
+
 1. ctrl+p
 2. 输入 >snippets
 3. 选择配置用户代码片段

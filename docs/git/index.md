@@ -3,7 +3,7 @@
 # Recommend Sites
 [Progit](https://www.progit.cn/)
 
-## fatal: unable to access 'https://github.com/xxxx/Code-Notexxxx.git/': Empty reply from server
+## fatal: unable to access 'xxxxx': Empty reply from server
 
 > 连接过ssr后，push不上去
 
@@ -30,23 +30,23 @@ $ git config http.sslVerify "false"
 ## 设置记住密码
 ```bash
 #默认15分钟
-git config --global credential.helper 
+$ git config --global credential.helper 
 #手动设置超时时间
-git config credential.helper 'cache --timeout=3600'
+$ git config credential.helper 'cache --timeout=3600'
 #长期记住密码
 $ git config --global credential.helper store
 ```
 
 ## git全局用户设置
 ```bash
-git config --global user.name  xxxxx
-git config --global user.email xxxxxxxx
+$ git config --global user.name  xxxxx
+$ git config --global user.email xxxxxxxx
 ```
 
 ## git当前用户设置
 ```bash
-git config --local user.name  xxxxx
-git config --local user.email xxxxxxxx
+$ git config --local user.name  xxxxx
+$ git config --local user.email xxxxxxxx
 ```
 
 ## ssh测试链接是否正常
@@ -96,11 +96,17 @@ $ vi config
 ```bash
 #  /.ssh/config
 # host最好配域名，否则可能找不到对应的ssh-key
-Host gitlab.com
-HostName gitlab.com
-IdentityFile C:\Users\EDZ\.ssh\id_rsa_gitlab
+$ Host gitlab.com
+$ HostName gitlab.com
+$ IdentityFile C:\Users\EDZ\.ssh\id_rsa_gitlab
     
-Host github.com
-HostName github.com
-IdentityFile C:\Users\EDZ\.ssh\id_rsa_github
+$ Host github.com
+$ HostName github.com
+$ IdentityFile C:\Users\EDZ\.ssh\id_rsa_github
+```
+
+## HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
+
+```bash
+$ git config --global http.version HTTP/1.1
 ```

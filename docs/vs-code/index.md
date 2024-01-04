@@ -5,6 +5,7 @@
 
 1. 方案1： 重新安装VSCode
 2. 方案2（推荐）： \<br>
+
     手动添加注册表,新建纯文本文件，复制以下内容，将所有的`D:\\Develop\\Microsoft VS Code`替换成`你的本地VSCODE安装目录`后，文件后缀修改成`.reg`，`双击一路确定`即可
     ```
     Windows Registry Editor Version 5.00
@@ -76,6 +77,7 @@
 - XML
 
 ## 添加代码片段（以markdown为例）
+
 1. ctrl+p
 2. 输入 >snippets
 3. 选择配置用户代码片段

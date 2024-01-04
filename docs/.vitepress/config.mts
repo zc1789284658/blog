@@ -15,7 +15,6 @@ export default defineConfig({
       { text: "About", link: "/about" },
       { text: "MDN", link: "https://developer.mozilla.org/zh-CN/" },
       { text: "TsPlay", link: "https://www.typescriptlang.org/play" },
-
     ],
     sidebar: [
       {

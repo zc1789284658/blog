@@ -6,7 +6,6 @@ svg不能很好的在anroid2.3中得到支持，需要额外的补充，IE8-以�
 
 svg image标签降级技术，这是一个名叫Alexey Ten首先提出来的，类似下面的代码：
 
-
 ```html
 <svg width="96" height="96">
   <image xlink:href="svg.svg" src="svg.png" width="96" height="96" />

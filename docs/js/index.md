@@ -2,7 +2,7 @@
 
 ## [Object.defineProperty && Object.defineProperties](./Object.defineProperty.md)
 
-## [Blob 以及 URL](./Blob&Url.md)
+## [Blob 以及 URL](./blob&Url.md)
 
 ## [节流与防抖](./throttleAndDebounce.md)
 

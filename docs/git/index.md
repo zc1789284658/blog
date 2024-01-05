@@ -110,3 +110,19 @@ $ IdentityFile C:\Users\EDZ\.ssh\id_rsa_github
 ```bash
 $ git config --global http.version HTTP/1.1
 ```
+
+## git sensative
+
+默认`git`对大小写不敏感（有文件名字大小写改变时，不会提交），需要手动处理
+
+### 方案1: `git mv`
+
+```bash
+$ git mv -f '.\docs\js\Blob&Url.md' '.\docs\js\blob&Url.md'
+```
+
+### 方案2: `git config core.ignorecase false`
+
+```bash
+$ git config core.ignorecase false
+```

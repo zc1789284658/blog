@@ -35,14 +35,82 @@ export default defineConfig({
             text: "FrameWork",
             collapsed: false,
             items: [
-              { text: "react", link: "/react/" },
               {
-                text: "vue", items: [
+                text: "react",
+                collapsed: true,
+                items: [
+                  { text: "react18", link: "/react/react18" },
+
+                  {
+                    text: "Library",
+                    items: [
+                      {
+                        text: "AntD",
+                        link: "https://ant-design.antgroup.com/components/overview-cn/",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                text: "vue",
+                collapsed: true,
+                items: [
                   { text: "vue2", link: "/vue/vue2/" },
                   { text: "vue3", link: "/vue/vue3/" },
-                ]
+                  {
+                    text: "Library",
+                    items: [{ text: "Quasar", link: "https://quasar.dev/" }],
+                  },
+                ],
+              },
+              {
+                text: "Angular",
+                link: "/angular/",
+              },
+              {
+                text: "flutter",
+                link: "/flutter/",
               },
             ],
+          },
+        ],
+      },
+      {
+        text: "Back End",
+        collapsed: true,
+        items: [{ text: "Nestjs", link: "https://nestjs.com/" }],
+      },
+      {
+        text: "Package manager",
+        collapsed: true,
+        items: [
+          {
+            text: "pnpm",
+            link: "https://pnpm.io/",
+          },
+        ],
+      },
+      {
+        text: "Test",
+        collapsed: true,
+        items: [
+          { text: "Jest", link: "https://jestjs.io/" },
+          { text: "Playwright", link: "https://playwright.dev/docs/intro" },
+          { text: "Puppeteer", link: "https://pptr.dev/" },
+        ],
+      },
+      {
+        text: "Performance",
+        collapsed: true,
+        items: [
+          {
+            text: "optimize",
+            link: "/performance/optimize",
+          },
+          {
+            text: "Lighthouse",
+            link: "https://github.com/GoogleChrome/lighthouse",
           },
         ],
       },
@@ -55,7 +123,7 @@ export default defineConfig({
           svg: '<svg aria-label="Vercel Logo" fill="var(--geist-foreground)" viewBox="0 0 75 65" height="26" data-testid="dashboard/logo"><path d="M37.59.25l36.95 64H.64l36.95-64z"></path></svg>',
         },
         link: "https://vercel.com/zhoucheng",
-        ariaLabel: "Vercel"
+        ariaLabel: "Vercel",
       },
     ],
   },

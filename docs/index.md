@@ -54,5 +54,9 @@ features:
     details: Grocery
     link: /grocery/
     icon: <?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17" y="11" width="10" height="9.99975" transform="rotate(-45 17 11)" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="30" y="24" width="10" height="9.99975" transform="rotate(-45 30 24)" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="24" width="10" height="9.99975" transform="rotate(-45 4 24)" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="17" y="37" width="10" height="9.99975" transform="rotate(-45 17 37)" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  
+  - title: flutter
+    link: /flutter/
+    icon: <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg width="60%" height="60%"><path d="M554.666667 85.333333L128 512l128 128L810.666667 85.333333zM810.666667 469.333333L576 704l-128-128 106.666667-106.666667z" fill="#40C4FF"></path><path d="M320 704l128-128 128 128-128 128z" fill="#03A9F4"></path><path d="M810.666667 938.666667H554.666667l-106.666667-106.666667 128-128z" fill="#01579B"></path><path d="M448 832l192-64-64-64z" fill="#084994"></path></svg>
 ---
 

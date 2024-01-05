@@ -6,19 +6,19 @@ Flutter 应用在 Android 端上启动时会有一段很明显的白屏现象，
 ## 问题分析
 其实启动白屏的问题在Android原生应用上也是一个常见问题，大致是因为从用户点击 Launcher Icon 到应用首页显示之间，Android 系统在完成应用的初始化工作，其流程如下：
 <!-- ![安卓流程](./images/android.jpg) -->
-![安卓流程](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/android.jpg)
+![安卓流程](./images/android.jpg)
 
 
 <!-- ![flutter流程](./images/flutter.jpg) -->
 在 Flutter Android 端上，白屏的问题会更加严重，因为除了 Android 应用启动耗时外，还增加了 Flutter 初始化耗时。
-![flutter流程](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/flutter.jpg)
+![flutter流程](./images/flutter.jpg)
 
 ## 解决方案
 Android原生的白屏问题可以通过为 Launcher Activity 设置 windowBackground 解决，而 Flutter 也是基于此办法，同时优化了 Flutter 初始化阶段的白屏问题（覆盖一个launchView），只用两步设置便能解决 Flutter 中白屏问题。
 
 ## 配置xml
-- 打开android\app\src\main\res\drawable\launch_background.xml
-- 将\<item>里面的内容反注释，并且准备一张图片分辨率1080 x 1920,放入android\app\src\main\res\mipmap-xxhdpi即可。注意名字改成launch_image即可。或者你可以用别的名字，把上面的xml文件改一下即可
+- 打开`android\app\src\main\res\drawable\launch_background.xml`
+- 将\<item>里面的内容反注释，并且准备一张图片分辨率1080 x 1920,放入`android\app\src\main\res\mipmap-xxhdpi`即可。注意名字改成`launch_image`即可。或者你可以用别的名字，把上面的xml文件改一下即可
 
 ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -41,33 +41,33 @@ Android原生的白屏问题可以通过为 Launcher Activity 设置 windowBackg
 
 ## 前后效果对比
 <!-- 添加闪屏前：![添加闪屏前](./images/no-splash.gif) -->
-添加闪屏前：![添加闪屏前](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/no-splash.gif)
+添加闪屏前：![添加闪屏前](./images/no-splash.gif)
 
 <!-- 添加闪屏后：![添加闪屏后](./images/has-splash.gif) -->
-添加闪屏后：![添加闪屏后](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/has-splash.gif)
+添加闪屏后：![添加闪屏后](./images/has-splash.gif)
 ## 问题集锦
 - 删除ic_launch，导致编译失败
     1. 方法1：不删除ic_launch文件
-    2. 方法2：debug模式中依赖此文件，<!--[将debug模式中的依赖文件进行修改](./images/delete-ic_launcher.png)-->[将debug模式中的依赖文件进行修改](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/delete-ic_launcher.png)
+    2. 方法2：debug模式中依赖此文件，<!--[将debug模式中的依赖文件进行修改](./images/delete-ic_launcher.png)-->[将debug模式中的依赖文件进行修改](./images/delete-ic_launcher.png)
 
 <!-- - [图片比例异常](./images/no-adaptor.png) -->
-- [图片比例异常](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/no-adaptor.png)
+- [图片比例异常](./images/no-adaptor.png)
     1. 方法1： 请根据[各文件夹对应的分辨率](#pixel)设置不同分辨率的图片
-    2. 方法2： 如果各分辨率比例差异不大，可以通过设置android:gravity属性进行自适应
+    2. 方法2： 如果各分辨率比例差异不大，可以通过设置`android:gravity`属性进行自适应
     ```xml
     <item>
         <bitmap android:gravity="fill_horizontal | fill_vertical" android:src="@mipmap/launch_image" />
     </item>
     ```
-    `闪屏图片分辨率与设备分辨率不匹配时`:
+    **闪屏图片分辨率与设备分辨率不匹配时**:
 
     <!-- ![闪屏图片分辨率与设备分辨率不匹配时](./images/no-adaptor.png) -->
-    ![闪屏图片分辨率与设备分辨率不匹配时](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/no-adaptor.png)
+    ![闪屏图片分辨率与设备分辨率不匹配时](./images/no-adaptor.png)
 
-    `闪屏图片通过android:gravity自适应结果如下`
+    **闪屏图片通过android:gravity自适应结果如下**
 
     <!-- ![通过android:gravity属性进行自适应](./images/adapted.png) -->
-    ![通过android:gravity属性进行自适应](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/adapted.png)
+    ![通过android:gravity属性进行自适应](./images/adapted.png)
 
 - 闪屏图片只能通过xml配置进行更换
     1. 如果应用有文件修改能力，则每次登陆后，从后台获取launcher_image地址后，修改xml，修改完后需要重新登陆
@@ -79,4 +79,4 @@ Android原生的白屏问题可以通过为 Launcher Activity 设置 windowBackg
 
 ## 实际文件图示
 <!-- ![实际文件图示](./images/flutter_android_splash.png) -->
-![实际文件图示](https://raw.githubusercontent.com/zc1789284658/Code-Note/master/flutter/images/flutter_android_splash.png)
+![实际文件图示](./images/flutter_android_splash.png)

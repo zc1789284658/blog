@@ -14,8 +14,12 @@ features:
     link: https://www.materialpalette.com/
   - title: Flat ui
     link: https://flatuicolors.com/
-  - title: Flutter
-    link: https://flutterchina.club/widgets/
+  - title: pdf.js
+    link: https://github.com/mozilla/pdf.js
+  - title: OverlayScrollbars
+    link: https://github.com/KingSora/OverlayScrollbars
+  - title: fabric.js
+    link: http://fabricjs.com/intersection
   - title: Reveal.js
     link: https://revealjs.com/#/
   - title: Raphael.js

@@ -5,16 +5,14 @@ Flutter 应用在 Android 端上启动时会有一段很明显的白屏现象，
 
 ## 问题分析
 其实启动白屏的问题在Android原生应用上也是一个常见问题，大致是因为从用户点击 Launcher Icon 到应用首页显示之间，Android 系统在完成应用的初始化工作，其流程如下：
-<!-- ![安卓流程](./images/android.jpg) -->
 ![安卓流程](./images/android.jpg)
 
 
-<!-- ![flutter流程](./images/flutter.jpg) -->
 在 Flutter Android 端上，白屏的问题会更加严重，因为除了 Android 应用启动耗时外，还增加了 Flutter 初始化耗时。
 ![flutter流程](./images/flutter.jpg)
 
 ## 解决方案
-Android原生的白屏问题可以通过为 Launcher Activity 设置 windowBackground 解决，而 Flutter 也是基于此办法，同时优化了 Flutter 初始化阶段的白屏问题（覆盖一个launchView），只用两步设置便能解决 Flutter 中白屏问题。
+Android原生的白屏问题可以通过为 `Launcher Activity` 设置 `windowBackground` 解决，而 Flutter 也是基于此办法，同时优化了 Flutter 初始化阶段的白屏问题（覆盖一个`launchView`），只用两步设置便能解决 Flutter 中白屏问题。
 
 ## 配置xml
 - 打开`android\app\src\main\res\drawable\launch_background.xml`
@@ -40,18 +38,19 @@ Android原生的白屏问题可以通过为 Launcher Activity 设置 windowBackg
 代表分辨率	|240 x 320	|320 x 480	|480 x 800|	720 x 1280|	1080 x 1920|	3840×2160
 
 ## 前后效果对比
-<!-- 添加闪屏前：![添加闪屏前](./images/no-splash.gif) -->
 添加闪屏前：![添加闪屏前](./images/no-splash.gif)
 
-<!-- 添加闪屏后：![添加闪屏后](./images/has-splash.gif) -->
 添加闪屏后：![添加闪屏后](./images/has-splash.gif)
 ## 问题集锦
 - 删除ic_launch，导致编译失败
     1. 方法1：不删除ic_launch文件
-    2. 方法2：debug模式中依赖此文件，<!--[将debug模式中的依赖文件进行修改](./images/delete-ic_launcher.png)-->[将debug模式中的依赖文件进行修改](./images/delete-ic_launcher.png)
+    2. 方法2：debug模式中依赖此文件，[将debug模式中的依赖文件进行修改](./images/delete-ic_launcher.png)
 
-<!-- - [图片比例异常](./images/no-adaptor.png) -->
-- [图片比例异常](./images/no-adaptor.png)
+- 图片比例异常
+    ::: details
+    ![图片比例异常](./images/no-adaptor.png)
+    :::
+
     1. 方法1： 请根据[各文件夹对应的分辨率](#pixel)设置不同分辨率的图片
     2. 方法2： 如果各分辨率比例差异不大，可以通过设置`android:gravity`属性进行自适应
     ```xml
@@ -61,12 +60,10 @@ Android原生的白屏问题可以通过为 Launcher Activity 设置 windowBackg
     ```
     **闪屏图片分辨率与设备分辨率不匹配时**:
 
-    <!-- ![闪屏图片分辨率与设备分辨率不匹配时](./images/no-adaptor.png) -->
     ![闪屏图片分辨率与设备分辨率不匹配时](./images/no-adaptor.png)
 
     **闪屏图片通过android:gravity自适应结果如下**
 
-    <!-- ![通过android:gravity属性进行自适应](./images/adapted.png) -->
     ![通过android:gravity属性进行自适应](./images/adapted.png)
 
 - 闪屏图片只能通过xml配置进行更换
@@ -78,5 +75,4 @@ Android原生的白屏问题可以通过为 Launcher Activity 设置 windowBackg
 
 
 ## 实际文件图示
-<!-- ![实际文件图示](./images/flutter_android_splash.png) -->
 ![实际文件图示](./images/flutter_android_splash.png)

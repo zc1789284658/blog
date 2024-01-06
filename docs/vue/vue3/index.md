@@ -182,6 +182,10 @@ p {
 </style>
 ```
 
-## Warnings
+## Warning
+
+::: warning
 
 1. `watchEffect` could only `collect` variables in `sync codes`
+
+:::

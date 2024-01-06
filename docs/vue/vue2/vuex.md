@@ -1,6 +1,5 @@
 # vuex 
 
-
 ::: warning
 vuex为老版本vue2下的全局状态管理，截至 __2024/01/01__ ，仍推荐pinia
 

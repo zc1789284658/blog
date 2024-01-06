@@ -6,8 +6,6 @@ service network restart   //重启网卡
 /etc/init.d/network restart  //上面的命令实际上是调用此脚本进行操作
 ```
 
----
-
 ## 网络相关系统配置
 ```
 cd /etc/systemconfig/network-scripts   //网络相关系统配置
@@ -15,8 +13,6 @@ vi ifconfig-xxx
 
 修改为=> ONBOOT     随开机启动
 ```
-
----
 
 ## yum更新
 ```
@@ -33,13 +29,10 @@ yum makecache
 yum install net-tools -y
 ```
 
----
 ## 过滤文本
 ```
 find / |grep xxx
 ```
-
----
 
 ## mariadb
 ```

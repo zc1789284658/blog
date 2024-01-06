@@ -87,8 +87,6 @@ img.src = url;                         // can now "stream" the bytes
 var url = (URL || webkitURL).createObjectURL(...);
 ```
 
----
-
 ### Data URI 
 
 编码为Base-64的字符串的Data-URI也是更好的选择。

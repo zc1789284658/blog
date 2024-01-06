@@ -1,26 +1,14 @@
 # 适配器模式
 
----
-
-
-
 ### 1.定义
 > 适配器的别名是包装器（wrapper）,这是一个相对简单的模式。在程序开发中有许多这样的场景，当我们试图使用某模块或者接口时，发现格式不符合目前的需求。我们有两种方法:
 1. 修改接口
 2. 为接口创建适配器，经过适配器把数据格式处理过后，再返回
 
----
-
-
-
 ### 2.案例：
 - 插头转换器
 - USB转接口
 - 电源适配器
-
----
-
-
 
 ### 3.代码以地图为例，最好的情况如下
 ```js
@@ -43,10 +31,6 @@ var renderMap = (map)=>{
 renderMap(baiduMap) //render baidu map'
 renderMap(googleMap)//render google map
 ```
-
----
-
-
 
 ### 4.意料之外的情况
 
@@ -80,10 +64,6 @@ renderMap(baiduMap)
 renderMap(googleMap)
 renderMap(gaodeMapAdaptor)  //对适配器进行处理
 ```
-
----
-
-
 
 ### 5.小结
 - 有一些模式跟适配器模式的结构非常相似，比如[装饰者模式](https://github.com/zc1789284658/Code-Note/edit/master/design-pattern/Decorator.md)、[代理模式](https://github.com/zc1789284658/Code-Note/edit/master/design-pattern/proxy.md)、和[外观模式](https://github.com/zc1789284658/Code-Note/edit/master/design-pattern/Facade.md)。这几种模式都属于**包装模式**，都是由一个对象来包装另一个对象。区别它们的关键仍然是意图

@@ -9,6 +9,9 @@ export default defineConfig({
   },
   head: [["link", { rel: "icon", href: "/favicon.svg" }]],
   themeConfig: {
+    search: {
+      provider: "local",
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
@@ -66,7 +69,8 @@ export default defineConfig({
               },
               {
                 text: "Angular",
-                link: "/angular/",
+                collapsed: true,
+                items: [{ text: "Angular17", link: "/angular/angular17" }],
               },
               {
                 text: "flutter",
@@ -101,6 +105,19 @@ export default defineConfig({
         ],
       },
       {
+        text: "Bundler",
+        collapsed: true,
+        items: [
+          {
+            text: "webpack",
+            items: [
+              { text: "webpack4", link: "/webpack/webpack4" },
+              { text: "webpack5", link: "/webpack/webpack5" },
+            ],
+          },
+        ],
+      },
+      {
         text: "Performance",
         collapsed: true,
         items: [
@@ -113,6 +130,10 @@ export default defineConfig({
             link: "https://github.com/GoogleChrome/lighthouse",
           },
         ],
+      },
+      {
+        text: "DesignPatterns",
+        link: "/design-patterns/",
       },
     ],
     socialLinks: [

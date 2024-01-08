@@ -25,7 +25,7 @@ filename作为资源的ID
 - In Java: `R.drawable.filename`
 - In XML: `@[package:]drawable/filename`
 
-## 语法:
+## 语法
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -43,7 +43,7 @@ filename作为资源的ID
 
 `<bitmap>`  定义位图的来源和属性
 
-## 属性:    
+## 属性  
 
 - xmlns:android 
 
@@ -108,7 +108,7 @@ filename作为资源的ID
         android:src="@drawable/icon"
         android:tileMode="repeat" />
     ```
-## 参考：   
+## 参考
 
 BitmapDrawable
 

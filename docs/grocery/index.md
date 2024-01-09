@@ -20,7 +20,7 @@ Error: EPERM: operation not permitted, unlink 'E:\work\blog\docs\.vitepress\.tem
 ```
 
 ::: warning
-修改完需要重新启动shell
+修改完需要重新启动shell或者重启vscode（`ctrl+shift+p` -> `>reload`）
 :::
 
 ### 解决：开启Windows开发者模式

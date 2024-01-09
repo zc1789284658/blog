@@ -7,7 +7,7 @@
 2. 方案2（推荐）： \<br>
 
     手动添加注册表,新建纯文本文件，复制以下内容，将所有的`D:\\Develop\\Microsoft VS Code`替换成`你的本地VSCODE安装目录`后，文件后缀修改成`.reg`，`双击一路确定`即可
-    ```
+    ```reg
     Windows Registry Editor Version 5.00
 
     [HKEY_CLASSES_ROOT\*\shell\VSCode]
@@ -83,7 +83,7 @@
 3. 选择配置用户代码片段
 4. 输入markdown，在选项卡中，打开markdown.json
 5. 输入想要的代码片段name-key-value，如下
-    ```js
+    ```json
     {
         "span code": {
             "prefix": "span",

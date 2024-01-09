@@ -9,6 +9,7 @@ export default async ()=> defineConfig({
     lineNumbers: true,
   },
   head: [["link", { rel: "icon", href: "/favicon.svg" }]],
+  cleanUrls: true,
   themeConfig: {
     logo: "/favicon.svg",
     search: {

@@ -1,6 +1,6 @@
 # Git
 
-# Recommend Sites
+## Recommend Sites
 [Progit](https://www.progit.cn/)
 
 ## fatal: unable to access 'xxxxx': Empty reply from server

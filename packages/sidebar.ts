@@ -61,6 +61,6 @@ export const genSidebar = (DOCS_PATH = "./docs") => {
 
     }
 
-    return sidebar;
+    return sidebar.sort((a,b)=> a.text?.localeCompare(b.text) );
 };
 

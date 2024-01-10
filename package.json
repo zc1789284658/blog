@@ -10,7 +10,13 @@
     "docs:preview": "vitepress preview docs",
     "prepare": "husky install"
   },
-  "keywords": ["blog","front-end","open","JackZZ","zhoucheng0431@gmail.com"],
+  "keywords": [
+    "blog",
+    "front-end",
+    "open",
+    "JackZZ",
+    "zhoucheng0431@gmail.com"
+  ],
   "author": "JackZZ",
   "license": "MIT",
   "devDependencies": {

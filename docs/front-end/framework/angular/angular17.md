@@ -148,3 +148,88 @@ effect((onCleanup) => {
 When you create an effect, it is automatically destroyed when its enclosing context is destroyed. This means that effects created within components are destroyed when the component is destroyed. The same goes for effects within directives, services, etc.
 
 Effects return an [`EffectRef`](https://angular.dev/api/core/EffectRef) that you can use to destroy them manually, by calling the `.destroy()` method. You can combine this with the `manualCleanup` option to create an effect that lasts until it is manually destroyed. Be careful to actually clean up such effects when they're no longer required.
+
+## New Syntax
+
+### Binding
+
+::: code-group
+
+```html [props:variable]
+<!-- @Input() src: string = ; -->
+<img alt="item" [src]="itemImageUrl">
+```
+
+```html [props:string]
+<app-item-detail childItem="this is normal string"></app-item-detail>
+```
+
+```html [event]
+<button (click)="onSave()">Save</button>
+```
+
+```html [style]
+<app-sizer [(size)]="fontSizePx"></app-sizer>
+<div [style.font-size.px]="fontSizePx">Resizable Text</div>
+```
+
+:::
+
+### Control Flow
+
+[https://angular.dev/guide/templates/control-flow](https://angular.dev/guide/templates/control-flow)
+
+::: code-group
+
+```js [@if]
+@if (a > b) {
+  {{a}} is greater than {{b}}
+} @else if (b > a) {
+  {{a}} is less than {{b}}
+} @else {
+  {{a}} is equal to {{b}}
+}
+```
+
+```js [@for]
+@for (item of items; track item.id) {
+  {{ item.name }}
+}
+```
+
+```js [@empty]
+@for (item of items; track item.name) {
+  <li> {{ item.name }} </li>
+} @empty {
+  <li> There are no items. </li>
+}
+```
+
+```js [@switch]
+@switch (condition) {
+  @case (caseA) {
+    Case A.
+  }
+  @case (caseB) {
+    Case B.
+  }
+  @default {
+    Default case.
+  }
+}
+
+```
+
+```js [@defer&@placeholder&@loading&@error]
+@defer {
+  <large-component />
+} @placeholder (minimum 500ms) {
+  <p>Placeholder content</p>
+} @loading (after 100ms; minimum 1s) {
+  <img alt="loading..." src="loading.gif" />
+} @error {
+  <p>Failed to load the calendar</p>
+}
+```
+
+:::

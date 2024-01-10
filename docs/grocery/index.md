@@ -19,19 +19,24 @@ build error:
 Error: EPERM: operation not permitted, unlink 'E:\work\blog\docs\.vitepress\.temp\@localSearchIndexroot.hRzpWETl.js'
 ```
 
-::: warning
-修改完需要重新启动shell或者重启vscode（`ctrl+shift+p` -> `>reload`）
-:::
+### 解决
 
-### 解决：开启Windows开发者模式
+::: details
+
+#### 方案1：开启Windows开发者模式
 
 [issue link](https://github.com/vuejs/vitepress/issues/1209)
 
 > windows11 > 系统 > 开发者选项 > 开发人员模式 （open）
 
 ![windows11 dev mode page](./images/win11-dev-mode.png)
-:::
 
-### 解决2：文件夹权限放开
+#### 方案2：文件夹权限放开
 
 ![windows11 open permission](./images/win11-open-permission-for-user.png)
+:::
+
+
+::: warning
+如果你使用的是vscode，修改完需要重新启动shell或者重启vscode（`ctrl+shift+p` -> `>reload`）
+:::

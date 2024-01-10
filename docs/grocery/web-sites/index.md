@@ -6,14 +6,15 @@ hero:
   name: "Recomment sites"
 
 features:
-  - title: JsBin
-    link: https://jsbin.com/?html,output/
-  - title: Css Battle
-    link: https://cssbattle.dev/ 
-  - title: Material palette
-    link: https://www.materialpalette.com/
-  - title: Flat ui
-    link: https://flatuicolors.com/
+  # basic
+  - title: Nestjs
+    link: https://nestjs.com/
+  - title: Node
+    link: https://nodejs.org/en/
+  # compatibility
+  - title: Can I Use
+    link: https://caniuse.com
+  # library
   - title: pdf.js
     link: https://github.com/mozilla/pdf.js
   - title: OverlayScrollbars
@@ -24,12 +25,17 @@ features:
     link: https://revealjs.com/#/
   - title: Raphael.js
     link: https://github.com/DmitryBaranovskiy/raphael/
-  - title: Can I Use
-    link: https://caniuse.com
-  - title: Nestjs
-    link: https://nestjs.com/
-  - title: Node
-    link: https://nodejs.org/en/
+  # playground
+  - title: JsBin
+    link: https://jsbin.com/?html,output/
+  - title: Css Battle
+    link: https://cssbattle.dev/
+    # design
+  - title: Material palette
+    link: https://www.materialpalette.com/
+  - title: Flat ui
+    link: https://flatuicolors.com/
+    # icons & fonts
   - title: IconPark
     link: https://iconpark.oceanengine.com/official
   - title: IconFont
@@ -40,5 +46,11 @@ features:
     link: https://fonts2u.com/
   - title: DaFont
     link: https://www.dafont.com/
+    # 动画
+  - title: Animejs
+    link: https://animejs.com
+  - title: Lottie
+    link: https://lottiefiles.com/
+  - title: GSAP
+    link: https://gsap.com/
 ---
-

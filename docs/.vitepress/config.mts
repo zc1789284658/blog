@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 import { genSidebar } from "../../packages/sidebar";
 
 // https://vitepress.dev/reference/site-config
-export default async ()=> defineConfig({
+export default async () => defineConfig({
   title: "JackZZ's blog",
   description: "A VitePress Site",
   markdown: {
@@ -23,8 +23,15 @@ export default async ()=> defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "About", link: "/about" },
-      { text: "MDN", link: "https://developer.mozilla.org/zh-CN/" },
-      { text: "TsPlay", link: "https://www.typescriptlang.org/play" },
+      {
+        text: "Links", items: [
+          { text: "MDN", link: "https://developer.mozilla.org/zh-CN/" },
+          { text: "TsPlay", link: "https://www.typescriptlang.org/play" },
+          { text: "TypeHero", link: "https://typehero.dev" },
+          { text: "ProxyPattern", link: "https://www.patterns.dev" },
+          { text: "Wiki", link: "https://en.wikipedia.org/" },
+        ]
+      }
     ],
     sidebar: genSidebar(),
     socialLinks: [

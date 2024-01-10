@@ -1,5 +1,8 @@
 # 设计模式（js）
 
+## Recommend
+[https://www.patterns.dev/#patterns](https://www.patterns.dev/#patterns)
+
 提示：`这种模式` 表示此模式在js中使用场景不多或者不重要。
 
 ## 创建类型设计模式

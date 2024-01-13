@@ -53,4 +53,7 @@ features:
     link: https://lottiefiles.com/
   - title: GSAP
     link: https://gsap.com/
+    # License
+  - title: ChooseLicense
+    link: https://choosealicense.com/
 ---

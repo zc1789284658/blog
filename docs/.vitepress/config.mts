@@ -33,6 +33,8 @@ export default async () => defineConfig({
           { text: "TypeHero", link: "https://typehero.dev" },
           { text: "VSCMarket", link: "https://marketplace.visualstudio.com/" },
           { text: "ProxyPattern", link: "https://www.patterns.dev" },
+          { text: "Netlify", link: "https://app.netlify.com" },
+          { text: "Vercel", link: "https://vercel.com/zhoucheng" },
           { text: "Wiki", link: "https://en.wikipedia.org/" },
         ]
       }

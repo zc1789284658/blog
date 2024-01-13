@@ -36,7 +36,7 @@ Error: EPERM: operation not permitted, unlink 'E:\work\blog\docs\.vitepress\.tem
 ![windows11 open permission](./images/win11-open-permission-for-user.png)
 :::
 
-
 ::: warning
-如果你使用的是vscode，修改完需要重新启动shell或者重启vscode（`ctrl+shift+p` -> `>reload`）
+1. 如果你使用的是vscode，修改完需要重新启动shell或者重启vscode（`ctrl+shift+p` -> `>reload`）
+2. pnpm docs:dev后，如果产生新文件，可能导致pnpm docs:build失败，需要重启vscode再build
 :::

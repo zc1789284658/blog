@@ -1,0 +1,29 @@
+{
+	"name": "vitepress-snippets",
+	"displayName": "vitePress Snippets",
+	"version": "1.0.0",
+	"publisher": "zhoucheng0431",
+	"author": "zhoucheng0431",
+	"description": "snippets for vitepress",
+	"icon": "./images/logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zc1789284658/blog/tree/main/packages/extensions/vitepress-snippets"
+	},
+	"keywords": ["VitePress","snippets","zhoucheng","markdown"],
+	"license": "ISC",
+	"engines": {
+		"vscode": "^1.85.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "markdown",
+				"path": "./snippets/snippets.code-snippets"
+			}
+		]
+	}
+}

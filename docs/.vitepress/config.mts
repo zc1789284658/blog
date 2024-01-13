@@ -28,6 +28,7 @@ export default async () => defineConfig({
           { text: "MDN", link: "https://developer.mozilla.org/zh-CN/" },
           { text: "TsPlay", link: "https://www.typescriptlang.org/play" },
           { text: "TypeHero", link: "https://typehero.dev" },
+          { text: "VSCMarket", link: "https://marketplace.visualstudio.com/" },
           { text: "ProxyPattern", link: "https://www.patterns.dev" },
           { text: "Wiki", link: "https://en.wikipedia.org/" },
         ]

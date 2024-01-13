@@ -136,19 +136,64 @@
 		],
 		"description": "generate markdown code helper, such focus/highlight"
 	},
-	"import-file": {
+	"import-code-snippets": {
 		"scope": "markdown",
-		"prefix": "/import-file",
+		"prefix": "/import-code-snippets",
 		"body": [
 			"<<< @/${1:filepath}{${2:highlightLines}}"
 		],
-		"description": "generate markdown import file code"
+		"description": "see https://vitepress.dev/guide/markdown#import-code-snippets"
 	},
 	"include-file": {
 		"scope": "markdown",
 		"prefix": "/include-file",
 		"body": [
 			"<!--@include: ${1:filePath}{${2:lineRangeStart},${3:lineRangeEnd}}-->"
-		]
+		],
+		"description":"see https://vitepress.dev/guide/markdown#markdown-file-inclusion"
+	},
+	"frontmatter-config": {
+		"scope": "markdown",
+		"prefix": "/frontmatter-config",
+		"body": [
+			"---",
+			"layout: ${1|doc,home,page|}",
+			"title: ${2:title}",
+			"titleTemplate: ${3:titleTemplate}",
+			"description: ${4:description}",
+			"navbar: ${5:true}",
+			"sidebar: ${6:true}",
+			"aside: ${7:true}",
+			"outline: ${8|9999,[1,9999],'deep',false|}",
+			"lastUpdated: ${9|false,true|}",
+			"editLink: ${10|false,true|}",
+			"footer: ${11|false,true|}",
+			"pageClass: ${12}",
+			"head:",
+			"  - - meta",
+			"    - name: description",
+		 	"      content: hello",
+			"  - - meta",
+			"    - name: keywords",
+			"      content: super duper SEO",
+			"---"
+		],
+		"description":"VitePress Frontmatter Config, see https://vitepress.dev/reference/frontmatter-config"
+	},
+	"$frontmatter":{
+		"scope": "markdown",
+		"prefix": "/$frontmatter",
+		"body":[
+			"{{ \\$frontmatter.${1|layout,title,titleTemplate,description,navbar,sidebar,aside,outline,lastUpdated,editLink,footer,pageClass,head|} }} $0"
+		],
+		"description":"VitePress Runtime API of Frontmatter Config, see https://vitepress.dev/reference/runtime-api#frontmatter"
+	},
+	"$params":{
+		"scope": "markdown",
+		"prefix": "/$params",
+		"body":[
+			"{{ \\$params.${1} }} $0"
+		],
+		"description":"VitePress Runtime API of Dynamic route params, see https://vitepress.dev/reference/runtime-api#params"
 	}
 }

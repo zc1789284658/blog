@@ -4,7 +4,7 @@ import { genSidebar } from "../../packages/sidebar";
 // https://vitepress.dev/reference/site-config
 export default async () => defineConfig({
   title: "JackZZ's blog",
-  description: "A VitePress Site",
+  description: "JackZZ's blog",
   markdown: {
     lineNumbers: true,
   },
@@ -14,6 +14,9 @@ export default async () => defineConfig({
     logo: "/favicon.svg",
     search: {
       provider: "local",
+    },
+    outline: {
+      level: [2, 3],
     },
     footer: {
       message: "Released under the MIT License.",

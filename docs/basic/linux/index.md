@@ -55,5 +55,3 @@ mysqladmin -u [用户名] password
 6.权限（外部访问）
 grant all privileges on '*.*' to root@'%' identified by 'thisispassword' 
 ```
--------------------------------
-codewars

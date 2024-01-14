@@ -28,14 +28,28 @@ export default async () => defineConfig({
       { text: "About", link: "/about" },
       {
         text: "Links", items: [
-          { text: "MDN", link: "https://developer.mozilla.org/zh-CN/" },
-          { text: "TsPlay", link: "https://www.typescriptlang.org/play" },
-          { text: "TypeHero", link: "https://typehero.dev" },
+          {
+            text: "Learn",
+            items: [
+              { text: "MDN", link: "https://developer.mozilla.org/zh-CN/" },
+              { text: "StackOverflow", link: "https://stackoverflow.com/" },
+              { text: "Wiki", link: "https://en.wikipedia.org/" },
+            ]
+          },
+          {
+            text: "Typescript", items: [
+              { text: "TsPlay", link: "https://www.typescriptlang.org/play" },
+              { text: "TypeHero", link: "https://typehero.dev" },
+            ]
+          },
+          {
+            text: "CICD", items: [
+              { text: "Netlify", link: "https://app.netlify.com" },
+              { text: "Vercel", link: "https://vercel.com/zhoucheng" },
+            ]
+          },
           { text: "VSCMarket", link: "https://marketplace.visualstudio.com/" },
           { text: "ProxyPattern", link: "https://www.patterns.dev" },
-          { text: "Netlify", link: "https://app.netlify.com" },
-          { text: "Vercel", link: "https://vercel.com/zhoucheng" },
-          { text: "Wiki", link: "https://en.wikipedia.org/" },
         ]
       }
     ],

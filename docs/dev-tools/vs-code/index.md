@@ -113,3 +113,13 @@
     }
     ```
 
+
+
+## 键盘映射出问题
+
+如我之前按`shift+'`变成了`@`，而输入`shift+2`则变成了`"`，以此为例
+
+1. ctrl+shift+p
+2. key mappings
+3. find `Shift+Digit2` and `Shift+Quote`
+4. 修复相关输出

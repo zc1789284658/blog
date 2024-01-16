@@ -23,7 +23,11 @@ Error: EPERM: operation not permitted, unlink 'E:\work\blog\docs\.vitepress\.tem
 
 ::: details
 
-#### 方案1：开启Windows开发者模式
+#### 方案1：关闭正在运行的`pnpm docs:dev`
+
+`vitepress docs dev`可能会占用文件，导致无法执行`vitepress docs build`
+
+#### 方案2：开启Windows开发者模式
 
 [issue link](https://github.com/vuejs/vitepress/issues/1209)
 
@@ -31,7 +35,7 @@ Error: EPERM: operation not permitted, unlink 'E:\work\blog\docs\.vitepress\.tem
 
 ![windows11 dev mode page](./images/win11-dev-mode.png)
 
-#### 方案2：文件夹权限放开
+#### 方案3：文件夹权限放开
 
 ![windows11 open permission](./images/win11-open-permission-for-user.png)
 :::

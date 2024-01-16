@@ -10,49 +10,49 @@ features:
   - title: Nestjs
     link: https://nestjs.com/
     icon:
-      src: ./images/nestjs.svg
+      src: /images/icons/nestjs.svg
   - title: Node
     link: https://nodejs.org/en/
     icon:
-      src: ./images/node.png
+      src: /images/icons/node.png
   # compatibility
   - title: Can I Use
     link: https://caniuse.com
     icon:
-      src: ./images/caniuse.png
+      src: /images/icons/caniuse.png
   # library
   - title: pdf.js
     link: https://github.com/mozilla/pdf.js
     icon:
-      src: ./images/pdfjs.svg
+      src: /images/icons/pdfjs.svg
   - title: OverlayScrollbars
     link: https://github.com/KingSora/OverlayScrollbars
     icon:
-      src: ./images/OverlayScrollbars.svg
+      src: /images/icons/OverlayScrollbars.svg
   - title: fabric.js
     link: http://fabricjs.com/intersection
     icon:
-      src: ./images/fabricjs.ico
+      src: /images/icons/fabricjs.ico
   - title: Reveal.js
     link: https://revealjs.com/#/
     icon:
-      src: ./images/revealjs.svg
+      src: /images/icons/revealjs.svg
   - title: Raphael.js
     link: https://github.com/DmitryBaranovskiy/raphael/
   # playground
   - title: JsBin
     link: https://jsbin.com/?html,output/
     icon: 
-      src: ./images/jsbin.svg
+      src: /images/icons/jsbin.svg
   - title: Css Battle
     link: https://cssbattle.dev/
     icon: 
-      src: ./images/css-battle.svg
+      src: /images/icons/css-battle.svg
     # design
   - title: Material palette
     link: https://www.materialpalette.com/
     icon: 
-      src: ./images/materialpalette.png
+      src: /images/icons/materialpalette.png
   - title: Flat ui
     link: https://flatuicolors.com/
     icon: 🎨
@@ -63,19 +63,19 @@ features:
   - title: IconFont
     link: https://www.iconfont.cn/
     icon:
-      src: ./images/iconfont.svg
+      src: /images/icons/iconfont.svg
   - title: Googlefonts
     link: http://www.googlefonts.cn/
     icon:
-      src: ./images/google_fonts.ico
+      src: /images/icons/google_fonts.ico
   - title: Fonts2u
     link: https://fonts2u.com/
     icon:
-      src: ./images/fonts2u.svg
+      src: /images/icons/fonts2u.svg
   - title: DaFont
     link: https://www.dafont.com/
     icon:
-      src: ./images/dafont.ico
+      src: /images/icons/dafont.ico
     # 动画
   - title: Animejs
     link: https://animejs.com
@@ -83,14 +83,14 @@ features:
   - title: Lottie
     link: https://lottiefiles.com/
     icon:
-      src: ./images/lottiefiles.svg
+      src: /images/icons/lottiefiles.svg
   - title: GSAP
     link: https://gsap.com/
     icon:
-      src: ./images/gsap.png
+      src: /images/icons/gsap.png
     # License
   - title: ChooseLicense
     link: https://choosealicense.com/
     icon:
-      src: ./images/chooselicense.ico
+      src: /images/icons/chooselicense.ico
 ---

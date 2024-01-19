@@ -20,7 +20,7 @@ hero:
 features:
   - title: Algorithm
     details: Some commonly used algorithms
-    link: /algorithm/sort-quick
+    link: /algorithm/Array
     icon: <?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="4" width="32" height="40" rx="2" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="14" y="11" width="20" height="9" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="17" cy="26" r="2" fill="#333"/><circle cx="17" cy="32" r="2" fill="#333"/><circle cx="17" cy="38" r="2" fill="#333"/><circle cx="24" cy="26" r="2" fill="#333"/><circle cx="24" cy="32" r="2" fill="#333"/><circle cx="24" cy="38" r="2" fill="#333"/><circle cx="31" cy="26" r="2" fill="#333"/><circle cx="31" cy="32" r="2" fill="#333"/><circle cx="31" cy="38" r="2" fill="#333"/></svg>
   - title: JS
     details: Docs about js
@@ -46,7 +46,7 @@ features:
   
   - title: VS Code
     details: Docs about VS Code
-    link: /vs-code/
+    link: /dev-tools/vs-code/
     icon: <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"  width="60%" height="60%"><path d="M746.222933 102.239573l-359.799466 330.820267L185.347413 281.4976 102.2464 329.864533l198.20544 182.132054-198.20544 182.132053 83.101013 48.510293 201.076054-151.558826 359.799466 330.676906 175.527254-85.251413V187.4944z m0 217.57952v384.341334l-255.040853-192.177494z" fill="#2196F3"></path></svg>
   
   - title: Web Sites

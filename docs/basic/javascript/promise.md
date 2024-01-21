@@ -255,3 +255,132 @@ const any = (promises) => {
   });
 };
 ```
+
+## 异步限流
+
+```js
+const promiseConcurrency = (promises, max) => {
+  const results = [];
+  return new Promise((r, rj) => {
+    if (promises.length === 0) r(results);
+    let runningIndex = 0; //当前下标
+    let completedCount = 0; //已完成数量
+    let maxCompleteCount = promises.length; //最大数量
+
+    const next = () => {
+      completedCount++;
+      if (completedCount === maxCompleteCount) {
+        return r(results);
+      }
+      if (runningIndex > maxCompleteCount - 1) {
+        return;
+      }
+      pick();
+    };
+    const pick = () => {
+      const _promise = promises[runningIndex];
+      let rIndex = runningIndex;
+      Promise.resolve(_promise())
+        .then((v) => {
+          results[rIndex] = v;
+        })
+        .catch((e) => {
+          results[rIndex] = e;
+        })
+        .finally(() => {
+          next();
+        });
+
+      runningIndex++;
+    };
+    while (max--) {
+      pick();
+    }
+  });
+};
+
+promiseConcurrency(
+  [
+    () => sleep(5000),
+    () => sleep(1000),
+    () => sleep(1000),
+    () => sleep(1000),
+    () => sleep(2000),
+    () => sleep(2000),
+    () => sleep(2000),
+    () => sleep(3000),
+    () => sleep(3000),
+    () => sleep(3000),
+    () => sleep(4000),
+    () => sleep(4000),
+    () => sleep(4000),
+  ],
+  3
+)
+  .then((e) => {
+    console.log("then", e);
+  })
+  .catch((e) => console.log("catch", e));
+```
+
+## 空闲批量执行
+
+```js
+const concurrentcyOnIdle = (promises, max) => {
+  const results = [];
+  let runningIndex = 0;
+  let completedCount = 0;
+  const maxCompleteCount = promises.length;
+  return new Promise((r, rj) => {
+    if (promises.length === 0) r(results);
+
+    const runOnCallback = () => {
+      window.requestIdleCallback(() => {
+        let startIndex = runningIndex;
+
+        Promise.allSettled(
+          promises
+            .splice(0, 3)
+            .filter(Boolean)
+            .map((fn) => fn())
+        ).then((v) => {
+          v.forEach((_v, index) => {
+            completedCount++;
+            results[startIndex + index] = _v;
+          });
+          if (completedCount < maxCompleteCount) {
+            return runOnCallback();
+          }
+          r(results);
+        });
+        runningIndex += max;
+      });
+    };
+
+    runOnCallback();
+  });
+};
+
+concurrentcyOnIdle(
+  [
+    () => sleep(10000),
+    () => sleep(1000),
+    () => sleep(1000),
+    () => sleep(1000),
+    () => sleep(2000),
+    () => sleep(2000),
+    () => sleep(2000),
+    () => sleep(3000),
+    () => sleep(3000),
+    () => sleep(3000),
+    () => sleep(4000),
+    () => sleep(4000),
+    () => sleep(4000),
+  ],
+  3
+)
+  .then((e) => {
+    console.log("then", e);
+  })
+  .catch((e) => console.log("catch", e));
+```

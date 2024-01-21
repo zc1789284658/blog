@@ -16,6 +16,10 @@ features:
     icon:
       src: /images/icons/node.png
   # compatibility
+  - title: core-js
+    link: https://github.com/zloirock/core-js?tab=readme-ov-file#promisewithresolvers
+    icon: 
+      src: /images/icons/core-js.png
   - title: Can I Use
     link: https://caniuse.com
     icon:
@@ -93,4 +97,8 @@ features:
     link: https://choosealicense.com/
     icon:
       src: /images/icons/chooselicense.ico
+  - title: OpenCollective
+    link: https://opencollective.com/opencollective
+    icon:
+      src: /images/icons/opencollective.png
 ---

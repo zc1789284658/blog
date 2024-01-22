@@ -32,6 +32,7 @@ export default async () => defineConfig({
             text: "Learn",
             items: [
               { text: "MDN", link: "https://developer.mozilla.org/zh-CN/" },
+              { text: "DevDocs", link: "https://devdocs.io/" },
               { text: "StackOverflow", link: "https://stackoverflow.com/" },
               { text: "Wiki", link: "https://en.wikipedia.org/" },
             ]

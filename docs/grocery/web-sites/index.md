@@ -41,9 +41,15 @@ features:
     link: https://revealjs.com/#/
     icon:
       src: /images/icons/revealjs.svg
-  - title: Raphael.js
-    link: https://github.com/DmitryBaranovskiy/raphael/
   # playground
+  - title: visualgo
+    link: https://visualgo.net/en
+    icon:
+      src: /images/icons/visualgo.png
+  - title: ASTExplorer
+    link: https://astexplorer.net/
+    icon:
+      src: /images/icons/astexplorer.png
   - title: JsBin
     link: https://jsbin.com/?html,output/
     icon: 
@@ -52,6 +58,10 @@ features:
     link: https://cssbattle.dev/
     icon: 
       src: /images/icons/css-battle.svg
+  - title: ihateregex
+    link: https://ihateregex.io/playground
+    icon: 
+      src: /images/icons/ihateregex.ico
     # design
   - title: Material palette
     link: https://www.materialpalette.com/

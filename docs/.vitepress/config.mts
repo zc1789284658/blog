@@ -35,6 +35,7 @@ export default async () => defineConfig({
               { text: "DevDocs", link: "https://devdocs.io/" },
               { text: "StackOverflow", link: "https://stackoverflow.com/" },
               { text: "Wiki", link: "https://en.wikipedia.org/" },
+              { text: "QuickRef", link: "https://quickref.me/" },
             ]
           },
           {

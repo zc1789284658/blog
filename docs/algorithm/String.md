@@ -38,7 +38,7 @@ console.log(check("abcab"));
 // a=xx and b=xx and c>xx  order by d
 ```
 
-```js
+```js [indexOf]
 
 // 原理  n -> n'n'n'  ->  n' |n'n'n' n'n' , 重复的字符串  ，竖线地方为indexOf下标，必然在n.length之前
 //       n -> n'a'b'  ->  n'a'b' |n'a'b'  ，不重复的字符串，竖线地方为indexOf下标，必然在n.length

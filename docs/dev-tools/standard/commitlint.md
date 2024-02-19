@@ -2,10 +2,17 @@
 
 [https://commitlint.js.org/](https://commitlint.js.org/)
 
+## install
+
+```bash
+pnpm add -D @commitlint/config-conventional @commitlint/cli
+```
+
+
 ## 无husky时，需要先配置husky
 
 ```bash
-npm install --save-dev husky
+pnpm add -D husky
 
 npx husky init
 ```

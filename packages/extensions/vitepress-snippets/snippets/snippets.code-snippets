@@ -132,7 +132,7 @@
 		"scope": "markdown",
 		"prefix": "/code-helper",
 		"body": [
-			"${1|// [!code --], // [!code ++], // [!code focus], // [!code hightlight], // [!code warning], // [!code error]|}"
+			"${1|// [!code --], // [!code ++], // [!code focus], // [!code highlight], // [!code warning], // [!code error]|}"
 		],
 		"description": "generate markdown code helper, such focus/highlight"
 	},

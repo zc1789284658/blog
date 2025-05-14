@@ -126,3 +126,9 @@ $ git mv -f '.\docs\js\Blob&Url.md' '.\docs\js\blob&Url.md'
 ```bash
 $ git config core.ignorecase false
 ```
+
+
+## Failed to connect to github.com port 443 after 21107 ms: Couldn't connect to server
+
+- 首先查看`hosts`文件(window下 `C:\Windows\System32\drivers\etc\hosts`)文件是否有被修改
+- 还不行修改git config，关闭sslVerify，设置http 1.1

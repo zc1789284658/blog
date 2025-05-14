@@ -117,9 +117,23 @@
 
 ## 键盘映射出问题
 
-如我之前按`shift+'`变成了`@`，而输入`shift+2`则变成了`"`，以此为例
+1. 重启vscode
+2. 重新设置映射
+> 如我之前按`shift+'`变成了`@`，而输入`shift+2`则变成了`"`，以此为例
+> 1. ctrl+shift+p
+> 2. key mappings
+> 3. find `Shift+Digit2` and `Shift+Quote`
+> 4. 修复相关输出
 
-1. ctrl+shift+p
-2. key mappings
-3. find `Shift+Digit2` and `Shift+Quote`
-4. 修复相关输出
+
+## 编辑器参数提示
+
+在`设置`中，搜索`inlay hints`，包含多种语言，自行设置，设置界面和效果如下
+
+**设置界面**
+
+![inlay-hints](./images/inlay-hints.png)
+
+**效果**
+
+![inlay-hints-effect](./images/inlay-hints-effect.png)
